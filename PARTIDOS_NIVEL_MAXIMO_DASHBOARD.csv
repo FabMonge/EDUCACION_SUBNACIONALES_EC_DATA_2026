@@ -1,0 +1,805 @@
+﻿"Partido","Nivel de Gobierno","Nivel Máximo","N Candidatos","Total Candidatos del Nivel","% del total"
+"APP","GENERAL","Secundaria",5684,9477,59.98
+"APP","GENERAL","Universitaria",1980,9477,20.89
+"APP","GENERAL","Posgrado",562,9477,5.93
+"APP","GENERAL","Primaria",527,9477,5.56
+"APP","GENERAL","Sin datos",457,9477,4.82
+"APP","GENERAL","Técnica",267,9477,2.82
+"APP","MUNICIPAL DISTRITAL","Secundaria",4887,7686,63.58
+"APP","MUNICIPAL DISTRITAL","Universitaria",1421,7686,18.49
+"APP","MUNICIPAL DISTRITAL","Primaria",477,7686,6.21
+"APP","MUNICIPAL DISTRITAL","Sin datos",391,7686,5.09
+"APP","MUNICIPAL DISTRITAL","Posgrado",310,7686,4.03
+"APP","MUNICIPAL DISTRITAL","Técnica",200,7686,2.6
+"APP","MUNICIPAL PROVINCIAL","Secundaria",705,1535,45.93
+"APP","MUNICIPAL PROVINCIAL","Universitaria",469,1535,30.55
+"APP","MUNICIPAL PROVINCIAL","Posgrado",211,1535,13.75
+"APP","MUNICIPAL PROVINCIAL","Técnica",54,1535,3.52
+"APP","MUNICIPAL PROVINCIAL","Sin datos",49,1535,3.19
+"APP","MUNICIPAL PROVINCIAL","Primaria",47,1535,3.06
+"APP","REGIONAL","Secundaria",92,256,35.94
+"APP","REGIONAL","Universitaria",90,256,35.16
+"APP","REGIONAL","Posgrado",41,256,16.02
+"APP","REGIONAL","Sin datos",17,256,6.64
+"APP","REGIONAL","Técnica",13,256,5.08
+"APP","REGIONAL","Primaria",3,256,1.17
+"Acción Popular","GENERAL","Secundaria",3264,6041,54.03
+"Acción Popular","GENERAL","Universitaria",1482,6041,24.53
+"Acción Popular","GENERAL","Posgrado",413,6041,6.84
+"Acción Popular","GENERAL","Sin datos",376,6041,6.22
+"Acción Popular","GENERAL","Primaria",311,6041,5.15
+"Acción Popular","GENERAL","Técnica",195,6041,3.23
+"Acción Popular","MUNICIPAL DISTRITAL","Secundaria",2748,4692,58.57
+"Acción Popular","MUNICIPAL DISTRITAL","Universitaria",1013,4692,21.59
+"Acción Popular","MUNICIPAL DISTRITAL","Primaria",288,4692,6.14
+"Acción Popular","MUNICIPAL DISTRITAL","Sin datos",268,4692,5.71
+"Acción Popular","MUNICIPAL DISTRITAL","Posgrado",237,4692,5.05
+"Acción Popular","MUNICIPAL DISTRITAL","Técnica",138,4692,2.94
+"Acción Popular","MUNICIPAL PROVINCIAL","Secundaria",414,1023,40.47
+"Acción Popular","MUNICIPAL PROVINCIAL","Universitaria",337,1023,32.94
+"Acción Popular","MUNICIPAL PROVINCIAL","Posgrado",126,1023,12.32
+"Acción Popular","MUNICIPAL PROVINCIAL","Sin datos",74,1023,7.23
+"Acción Popular","MUNICIPAL PROVINCIAL","Técnica",50,1023,4.89
+"Acción Popular","MUNICIPAL PROVINCIAL","Primaria",22,1023,2.15
+"Acción Popular","REGIONAL","Universitaria",132,326,40.49
+"Acción Popular","REGIONAL","Secundaria",102,326,31.29
+"Acción Popular","REGIONAL","Posgrado",50,326,15.34
+"Acción Popular","REGIONAL","Sin datos",34,326,10.43
+"Acción Popular","REGIONAL","Técnica",7,326,2.15
+"Acción Popular","REGIONAL","Primaria",1,326,0.31
+"Ahora Nación","GENERAL","Secundaria",3073,6011,51.12
+"Ahora Nación","GENERAL","Universitaria",1520,6011,25.29
+"Ahora Nación","GENERAL","Posgrado",510,6011,8.48
+"Ahora Nación","GENERAL","Sin datos",416,6011,6.92
+"Ahora Nación","GENERAL","Primaria",288,6011,4.79
+"Ahora Nación","GENERAL","Técnica",204,6011,3.39
+"Ahora Nación","MUNICIPAL DISTRITAL","Secundaria",2604,4721,55.16
+"Ahora Nación","MUNICIPAL DISTRITAL","Universitaria",1107,4721,23.45
+"Ahora Nación","MUNICIPAL DISTRITAL","Posgrado",309,4721,6.55
+"Ahora Nación","MUNICIPAL DISTRITAL","Sin datos",278,4721,5.89
+"Ahora Nación","MUNICIPAL DISTRITAL","Primaria",265,4721,5.61
+"Ahora Nación","MUNICIPAL DISTRITAL","Técnica",158,4721,3.35
+"Ahora Nación","MUNICIPAL PROVINCIAL","Secundaria",417,1087,38.36
+"Ahora Nación","MUNICIPAL PROVINCIAL","Universitaria",368,1087,33.85
+"Ahora Nación","MUNICIPAL PROVINCIAL","Posgrado",153,1087,14.08
+"Ahora Nación","MUNICIPAL PROVINCIAL","Sin datos",85,1087,7.82
+"Ahora Nación","MUNICIPAL PROVINCIAL","Técnica",41,1087,3.77
+"Ahora Nación","MUNICIPAL PROVINCIAL","Primaria",23,1087,2.12
+"Ahora Nación","REGIONAL","Sin datos",53,203,26.11
+"Ahora Nación","REGIONAL","Secundaria",52,203,25.62
+"Ahora Nación","REGIONAL","Posgrado",48,203,23.65
+"Ahora Nación","REGIONAL","Universitaria",45,203,22.17
+"Ahora Nación","REGIONAL","Técnica",5,203,2.46
+"Apra","GENERAL","Secundaria",631,1508,41.84
+"Apra","GENERAL","Universitaria",432,1508,28.65
+"Apra","GENERAL","Sin datos",212,1508,14.06
+"Apra","GENERAL","Posgrado",150,1508,9.95
+"Apra","GENERAL","Técnica",43,1508,2.85
+"Apra","GENERAL","Primaria",40,1508,2.65
+"Apra","MUNICIPAL DISTRITAL","Secundaria",458,1031,44.42
+"Apra","MUNICIPAL DISTRITAL","Universitaria",275,1031,26.67
+"Apra","MUNICIPAL DISTRITAL","Sin datos",167,1031,16.2
+"Apra","MUNICIPAL DISTRITAL","Posgrado",81,1031,7.86
+"Apra","MUNICIPAL DISTRITAL","Primaria",26,1031,2.52
+"Apra","MUNICIPAL DISTRITAL","Técnica",24,1031,2.33
+"Apra","MUNICIPAL PROVINCIAL","Secundaria",152,393,38.68
+"Apra","MUNICIPAL PROVINCIAL","Universitaria",124,393,31.55
+"Apra","MUNICIPAL PROVINCIAL","Posgrado",58,393,14.76
+"Apra","MUNICIPAL PROVINCIAL","Sin datos",29,393,7.38
+"Apra","MUNICIPAL PROVINCIAL","Técnica",17,393,4.33
+"Apra","MUNICIPAL PROVINCIAL","Primaria",13,393,3.31
+"Apra","REGIONAL","Universitaria",33,84,39.29
+"Apra","REGIONAL","Secundaria",21,84,25
+"Apra","REGIONAL","Sin datos",16,84,19.05
+"Apra","REGIONAL","Posgrado",11,84,13.1
+"Apra","REGIONAL","Técnica",2,84,2.38
+"Apra","REGIONAL","Primaria",1,84,1.19
+"Avanza País","GENERAL","Secundaria",1034,2226,46.45
+"Avanza País","GENERAL","Universitaria",557,2226,25.02
+"Avanza País","GENERAL","Sin datos",292,2226,13.12
+"Avanza País","GENERAL","Posgrado",195,2226,8.76
+"Avanza País","GENERAL","Primaria",79,2226,3.55
+"Avanza País","GENERAL","Técnica",69,2226,3.1
+"Avanza País","MUNICIPAL DISTRITAL","Secundaria",825,1712,48.19
+"Avanza País","MUNICIPAL DISTRITAL","Universitaria",413,1712,24.12
+"Avanza País","MUNICIPAL DISTRITAL","Sin datos",233,1712,13.61
+"Avanza País","MUNICIPAL DISTRITAL","Posgrado",126,1712,7.36
+"Avanza País","MUNICIPAL DISTRITAL","Primaria",67,1712,3.91
+"Avanza País","MUNICIPAL DISTRITAL","Técnica",48,1712,2.8
+"Avanza País","MUNICIPAL PROVINCIAL","Secundaria",170,370,45.95
+"Avanza País","MUNICIPAL PROVINCIAL","Universitaria",102,370,27.57
+"Avanza País","MUNICIPAL PROVINCIAL","Posgrado",46,370,12.43
+"Avanza País","MUNICIPAL PROVINCIAL","Sin datos",29,370,7.84
+"Avanza País","MUNICIPAL PROVINCIAL","Técnica",18,370,4.86
+"Avanza País","MUNICIPAL PROVINCIAL","Primaria",5,370,1.35
+"Avanza País","REGIONAL","Universitaria",42,144,29.17
+"Avanza País","REGIONAL","Secundaria",39,144,27.08
+"Avanza País","REGIONAL","Sin datos",30,144,20.83
+"Avanza País","REGIONAL","Posgrado",23,144,15.97
+"Avanza País","REGIONAL","Primaria",7,144,4.86
+"Avanza País","REGIONAL","Técnica",3,144,2.08
+"Batalla Perú","GENERAL","Secundaria",685,1318,51.97
+"Batalla Perú","GENERAL","Universitaria",253,1318,19.2
+"Batalla Perú","GENERAL","Sin datos",219,1318,16.62
+"Batalla Perú","GENERAL","Posgrado",82,1318,6.22
+"Batalla Perú","GENERAL","Primaria",46,1318,3.49
+"Batalla Perú","GENERAL","Técnica",33,1318,2.5
+"Batalla Perú","MUNICIPAL DISTRITAL","Secundaria",544,1009,53.91
+"Batalla Perú","MUNICIPAL DISTRITAL","Universitaria",175,1009,17.34
+"Batalla Perú","MUNICIPAL DISTRITAL","Sin datos",174,1009,17.24
+"Batalla Perú","MUNICIPAL DISTRITAL","Posgrado",47,1009,4.66
+"Batalla Perú","MUNICIPAL DISTRITAL","Primaria",43,1009,4.26
+"Batalla Perú","MUNICIPAL DISTRITAL","Técnica",26,1009,2.58
+"Batalla Perú","MUNICIPAL PROVINCIAL","Secundaria",128,248,51.61
+"Batalla Perú","MUNICIPAL PROVINCIAL","Universitaria",53,248,21.37
+"Batalla Perú","MUNICIPAL PROVINCIAL","Sin datos",33,248,13.31
+"Batalla Perú","MUNICIPAL PROVINCIAL","Posgrado",25,248,10.08
+"Batalla Perú","MUNICIPAL PROVINCIAL","Técnica",6,248,2.42
+"Batalla Perú","MUNICIPAL PROVINCIAL","Primaria",3,248,1.21
+"Batalla Perú","REGIONAL","Universitaria",25,61,40.98
+"Batalla Perú","REGIONAL","Secundaria",13,61,21.31
+"Batalla Perú","REGIONAL","Sin datos",12,61,19.67
+"Batalla Perú","REGIONAL","Posgrado",10,61,16.39
+"Batalla Perú","REGIONAL","Técnica",1,61,1.64
+"Fe en el Perú","GENERAL","Secundaria",383,670,57.16
+"Fe en el Perú","GENERAL","Universitaria",152,670,22.69
+"Fe en el Perú","GENERAL","Sin datos",58,670,8.66
+"Fe en el Perú","GENERAL","Posgrado",34,670,5.07
+"Fe en el Perú","GENERAL","Primaria",22,670,3.28
+"Fe en el Perú","GENERAL","Técnica",21,670,3.13
+"Fe en el Perú","MUNICIPAL DISTRITAL","Secundaria",307,525,58.48
+"Fe en el Perú","MUNICIPAL DISTRITAL","Universitaria",102,525,19.43
+"Fe en el Perú","MUNICIPAL DISTRITAL","Sin datos",53,525,10.1
+"Fe en el Perú","MUNICIPAL DISTRITAL","Posgrado",27,525,5.14
+"Fe en el Perú","MUNICIPAL DISTRITAL","Primaria",21,525,4
+"Fe en el Perú","MUNICIPAL DISTRITAL","Técnica",15,525,2.86
+"Fe en el Perú","MUNICIPAL PROVINCIAL","Secundaria",64,121,52.89
+"Fe en el Perú","MUNICIPAL PROVINCIAL","Universitaria",40,121,33.06
+"Fe en el Perú","MUNICIPAL PROVINCIAL","Posgrado",6,121,4.96
+"Fe en el Perú","MUNICIPAL PROVINCIAL","Sin datos",5,121,4.13
+"Fe en el Perú","MUNICIPAL PROVINCIAL","Técnica",5,121,4.13
+"Fe en el Perú","MUNICIPAL PROVINCIAL","Primaria",1,121,0.83
+"Fe en el Perú","REGIONAL","Secundaria",12,24,50
+"Fe en el Perú","REGIONAL","Universitaria",10,24,41.67
+"Fe en el Perú","REGIONAL","Posgrado",1,24,4.17
+"Fe en el Perú","REGIONAL","Técnica",1,24,4.17
+"Frente de la Esperanza 2021","GENERAL","Secundaria",687,1372,50.07
+"Frente de la Esperanza 2021","GENERAL","Universitaria",328,1372,23.91
+"Frente de la Esperanza 2021","GENERAL","Sin datos",169,1372,12.32
+"Frente de la Esperanza 2021","GENERAL","Posgrado",90,1372,6.56
+"Frente de la Esperanza 2021","GENERAL","Primaria",60,1372,4.37
+"Frente de la Esperanza 2021","GENERAL","Técnica",38,1372,2.77
+"Frente de la Esperanza 2021","MUNICIPAL DISTRITAL","Secundaria",556,1032,53.88
+"Frente de la Esperanza 2021","MUNICIPAL DISTRITAL","Universitaria",229,1032,22.19
+"Frente de la Esperanza 2021","MUNICIPAL DISTRITAL","Sin datos",122,1032,11.82
+"Frente de la Esperanza 2021","MUNICIPAL DISTRITAL","Posgrado",50,1032,4.84
+"Frente de la Esperanza 2021","MUNICIPAL DISTRITAL","Primaria",48,1032,4.65
+"Frente de la Esperanza 2021","MUNICIPAL DISTRITAL","Técnica",27,1032,2.62
+"Frente de la Esperanza 2021","MUNICIPAL PROVINCIAL","Secundaria",127,289,43.94
+"Frente de la Esperanza 2021","MUNICIPAL PROVINCIAL","Universitaria",94,289,32.53
+"Frente de la Esperanza 2021","MUNICIPAL PROVINCIAL","Posgrado",35,289,12.11
+"Frente de la Esperanza 2021","MUNICIPAL PROVINCIAL","Primaria",12,289,4.15
+"Frente de la Esperanza 2021","MUNICIPAL PROVINCIAL","Técnica",11,289,3.81
+"Frente de la Esperanza 2021","MUNICIPAL PROVINCIAL","Sin datos",10,289,3.46
+"Frente de la Esperanza 2021","REGIONAL","Sin datos",37,51,72.55
+"Frente de la Esperanza 2021","REGIONAL","Posgrado",5,51,9.8
+"Frente de la Esperanza 2021","REGIONAL","Universitaria",5,51,9.8
+"Frente de la Esperanza 2021","REGIONAL","Secundaria",4,51,7.84
+"Frepap","GENERAL","Secundaria",544,1248,43.59
+"Frepap","GENERAL","Sin datos",363,1248,29.09
+"Frepap","GENERAL","Primaria",146,1248,11.7
+"Frepap","GENERAL","Universitaria",140,1248,11.22
+"Frepap","GENERAL","Técnica",29,1248,2.32
+"Frepap","GENERAL","Posgrado",26,1248,2.08
+"Frepap","MUNICIPAL DISTRITAL","Secundaria",197,416,47.36
+"Frepap","MUNICIPAL DISTRITAL","Sin datos",94,416,22.6
+"Frepap","MUNICIPAL DISTRITAL","Universitaria",53,416,12.74
+"Frepap","MUNICIPAL DISTRITAL","Primaria",47,416,11.3
+"Frepap","MUNICIPAL DISTRITAL","Posgrado",16,416,3.85
+"Frepap","MUNICIPAL DISTRITAL","Técnica",9,416,2.16
+"Frepap","MUNICIPAL PROVINCIAL","Secundaria",281,584,48.12
+"Frepap","MUNICIPAL PROVINCIAL","Sin datos",120,584,20.55
+"Frepap","MUNICIPAL PROVINCIAL","Primaria",89,584,15.24
+"Frepap","MUNICIPAL PROVINCIAL","Universitaria",71,584,12.16
+"Frepap","MUNICIPAL PROVINCIAL","Técnica",16,584,2.74
+"Frepap","MUNICIPAL PROVINCIAL","Posgrado",7,584,1.2
+"Frepap","REGIONAL","Sin datos",149,248,60.08
+"Frepap","REGIONAL","Secundaria",66,248,26.61
+"Frepap","REGIONAL","Universitaria",16,248,6.45
+"Frepap","REGIONAL","Primaria",10,248,4.03
+"Frepap","REGIONAL","Técnica",4,248,1.61
+"Frepap","REGIONAL","Posgrado",3,248,1.21
+"Fuerza Popular","GENERAL","Secundaria",1626,2794,58.2
+"Fuerza Popular","GENERAL","Universitaria",650,2794,23.26
+"Fuerza Popular","GENERAL","Sin datos",197,2794,7.05
+"Fuerza Popular","GENERAL","Posgrado",157,2794,5.62
+"Fuerza Popular","GENERAL","Primaria",99,2794,3.54
+"Fuerza Popular","GENERAL","Técnica",65,2794,2.33
+"Fuerza Popular","MUNICIPAL DISTRITAL","Secundaria",1303,2072,62.89
+"Fuerza Popular","MUNICIPAL DISTRITAL","Universitaria",427,2072,20.61
+"Fuerza Popular","MUNICIPAL DISTRITAL","Sin datos",125,2072,6.03
+"Fuerza Popular","MUNICIPAL DISTRITAL","Posgrado",93,2072,4.49
+"Fuerza Popular","MUNICIPAL DISTRITAL","Primaria",81,2072,3.91
+"Fuerza Popular","MUNICIPAL DISTRITAL","Técnica",43,2072,2.08
+"Fuerza Popular","MUNICIPAL PROVINCIAL","Secundaria",282,579,48.7
+"Fuerza Popular","MUNICIPAL PROVINCIAL","Universitaria",183,579,31.61
+"Fuerza Popular","MUNICIPAL PROVINCIAL","Posgrado",51,579,8.81
+"Fuerza Popular","MUNICIPAL PROVINCIAL","Sin datos",27,579,4.66
+"Fuerza Popular","MUNICIPAL PROVINCIAL","Técnica",19,579,3.28
+"Fuerza Popular","MUNICIPAL PROVINCIAL","Primaria",17,579,2.94
+"Fuerza Popular","REGIONAL","Sin datos",45,143,31.47
+"Fuerza Popular","REGIONAL","Secundaria",41,143,28.67
+"Fuerza Popular","REGIONAL","Universitaria",40,143,27.97
+"Fuerza Popular","REGIONAL","Posgrado",13,143,9.09
+"Fuerza Popular","REGIONAL","Técnica",3,143,2.1
+"Fuerza Popular","REGIONAL","Primaria",1,143,0.7
+"Juntos por el Perú","GENERAL","Secundaria",944,1970,47.92
+"Juntos por el Perú","GENERAL","Universitaria",397,1970,20.15
+"Juntos por el Perú","GENERAL","Sin datos",394,1970,20
+"Juntos por el Perú","GENERAL","Posgrado",118,1970,5.99
+"Juntos por el Perú","GENERAL","Primaria",72,1970,3.65
+"Juntos por el Perú","GENERAL","Técnica",45,1970,2.28
+"Juntos por el Perú","MUNICIPAL DISTRITAL","Secundaria",690,1313,52.55
+"Juntos por el Perú","MUNICIPAL DISTRITAL","Sin datos",259,1313,19.73
+"Juntos por el Perú","MUNICIPAL DISTRITAL","Universitaria",231,1313,17.59
+"Juntos por el Perú","MUNICIPAL DISTRITAL","Primaria",59,1313,4.49
+"Juntos por el Perú","MUNICIPAL DISTRITAL","Posgrado",49,1313,3.73
+"Juntos por el Perú","MUNICIPAL DISTRITAL","Técnica",25,1313,1.9
+"Juntos por el Perú","MUNICIPAL PROVINCIAL","Secundaria",216,486,44.44
+"Juntos por el Perú","MUNICIPAL PROVINCIAL","Universitaria",133,486,27.37
+"Juntos por el Perú","MUNICIPAL PROVINCIAL","Sin datos",60,486,12.35
+"Juntos por el Perú","MUNICIPAL PROVINCIAL","Posgrado",56,486,11.52
+"Juntos por el Perú","MUNICIPAL PROVINCIAL","Técnica",13,486,2.67
+"Juntos por el Perú","MUNICIPAL PROVINCIAL","Primaria",8,486,1.65
+"Juntos por el Perú","REGIONAL","Sin datos",75,171,43.86
+"Juntos por el Perú","REGIONAL","Secundaria",38,171,22.22
+"Juntos por el Perú","REGIONAL","Universitaria",33,171,19.3
+"Juntos por el Perú","REGIONAL","Posgrado",13,171,7.6
+"Juntos por el Perú","REGIONAL","Técnica",7,171,4.09
+"Juntos por el Perú","REGIONAL","Primaria",5,171,2.92
+"Libertad Popular","GENERAL","Secundaria",916,1681,54.49
+"Libertad Popular","GENERAL","Universitaria",337,1681,20.05
+"Libertad Popular","GENERAL","Sin datos",155,1681,9.22
+"Libertad Popular","GENERAL","Posgrado",98,1681,5.83
+"Libertad Popular","GENERAL","Técnica",88,1681,5.23
+"Libertad Popular","GENERAL","Primaria",87,1681,5.18
+"Libertad Popular","MUNICIPAL DISTRITAL","Secundaria",769,1330,57.82
+"Libertad Popular","MUNICIPAL DISTRITAL","Universitaria",239,1330,17.97
+"Libertad Popular","MUNICIPAL DISTRITAL","Sin datos",128,1330,9.62
+"Libertad Popular","MUNICIPAL DISTRITAL","Primaria",78,1330,5.86
+"Libertad Popular","MUNICIPAL DISTRITAL","Técnica",65,1330,4.89
+"Libertad Popular","MUNICIPAL DISTRITAL","Posgrado",51,1330,3.83
+"Libertad Popular","MUNICIPAL PROVINCIAL","Secundaria",132,309,42.72
+"Libertad Popular","MUNICIPAL PROVINCIAL","Universitaria",86,309,27.83
+"Libertad Popular","MUNICIPAL PROVINCIAL","Posgrado",37,309,11.97
+"Libertad Popular","MUNICIPAL PROVINCIAL","Sin datos",26,309,8.41
+"Libertad Popular","MUNICIPAL PROVINCIAL","Técnica",20,309,6.47
+"Libertad Popular","MUNICIPAL PROVINCIAL","Primaria",8,309,2.59
+"Libertad Popular","REGIONAL","Secundaria",15,42,35.71
+"Libertad Popular","REGIONAL","Universitaria",12,42,28.57
+"Libertad Popular","REGIONAL","Posgrado",10,42,23.81
+"Libertad Popular","REGIONAL","Técnica",3,42,7.14
+"Libertad Popular","REGIONAL","Primaria",1,42,2.38
+"Libertad Popular","REGIONAL","Sin datos",1,42,2.38
+"Obras","GENERAL","Secundaria",347,734,47.28
+"Obras","GENERAL","Universitaria",179,734,24.39
+"Obras","GENERAL","Sin datos",121,734,16.49
+"Obras","GENERAL","Posgrado",50,734,6.81
+"Obras","GENERAL","Primaria",22,734,3
+"Obras","GENERAL","Técnica",15,734,2.04
+"Obras","MUNICIPAL DISTRITAL","Secundaria",248,466,53.22
+"Obras","MUNICIPAL DISTRITAL","Universitaria",107,466,22.96
+"Obras","MUNICIPAL DISTRITAL","Sin datos",59,466,12.66
+"Obras","MUNICIPAL DISTRITAL","Posgrado",23,466,4.94
+"Obras","MUNICIPAL DISTRITAL","Primaria",20,466,4.29
+"Obras","MUNICIPAL DISTRITAL","Técnica",9,466,1.93
+"Obras","MUNICIPAL PROVINCIAL","Secundaria",83,194,42.78
+"Obras","MUNICIPAL PROVINCIAL","Universitaria",54,194,27.84
+"Obras","MUNICIPAL PROVINCIAL","Sin datos",36,194,18.56
+"Obras","MUNICIPAL PROVINCIAL","Posgrado",14,194,7.22
+"Obras","MUNICIPAL PROVINCIAL","Técnica",6,194,3.09
+"Obras","MUNICIPAL PROVINCIAL","Primaria",1,194,0.52
+"Obras","REGIONAL","Sin datos",26,74,35.14
+"Obras","REGIONAL","Universitaria",18,74,24.32
+"Obras","REGIONAL","Secundaria",16,74,21.62
+"Obras","REGIONAL","Posgrado",13,74,17.57
+"Obras","REGIONAL","Primaria",1,74,1.35
+"PPC","GENERAL","Secundaria",650,1391,46.73
+"PPC","GENERAL","Universitaria",443,1391,31.85
+"PPC","GENERAL","Posgrado",142,1391,10.21
+"PPC","GENERAL","Sin datos",88,1391,6.33
+"PPC","GENERAL","Técnica",60,1391,4.31
+"PPC","GENERAL","Primaria",8,1391,0.58
+"PPC","MUNICIPAL DISTRITAL","Secundaria",494,994,49.7
+"PPC","MUNICIPAL DISTRITAL","Universitaria",304,994,30.58
+"PPC","MUNICIPAL DISTRITAL","Posgrado",74,994,7.44
+"PPC","MUNICIPAL DISTRITAL","Sin datos",71,994,7.14
+"PPC","MUNICIPAL DISTRITAL","Técnica",46,994,4.63
+"PPC","MUNICIPAL DISTRITAL","Primaria",5,994,0.5
+"PPC","MUNICIPAL PROVINCIAL","Secundaria",118,298,39.6
+"PPC","MUNICIPAL PROVINCIAL","Universitaria",104,298,34.9
+"PPC","MUNICIPAL PROVINCIAL","Posgrado",46,298,15.44
+"PPC","MUNICIPAL PROVINCIAL","Sin datos",16,298,5.37
+"PPC","MUNICIPAL PROVINCIAL","Técnica",11,298,3.69
+"PPC","MUNICIPAL PROVINCIAL","Primaria",3,298,1.01
+"PPC","REGIONAL","Secundaria",38,99,38.38
+"PPC","REGIONAL","Universitaria",35,99,35.35
+"PPC","REGIONAL","Posgrado",22,99,22.22
+"PPC","REGIONAL","Técnica",3,99,3.03
+"PPC","REGIONAL","Sin datos",1,99,1.01
+"PRIN","GENERAL","Secundaria",586,1190,49.24
+"PRIN","GENERAL","Universitaria",327,1190,27.48
+"PRIN","GENERAL","Posgrado",99,1190,8.32
+"PRIN","GENERAL","Sin datos",95,1190,7.98
+"PRIN","GENERAL","Técnica",42,1190,3.53
+"PRIN","GENERAL","Primaria",41,1190,3.45
+"PRIN","MUNICIPAL DISTRITAL","Secundaria",485,908,53.41
+"PRIN","MUNICIPAL DISTRITAL","Universitaria",235,908,25.88
+"PRIN","MUNICIPAL DISTRITAL","Sin datos",64,908,7.05
+"PRIN","MUNICIPAL DISTRITAL","Posgrado",58,908,6.39
+"PRIN","MUNICIPAL DISTRITAL","Primaria",34,908,3.74
+"PRIN","MUNICIPAL DISTRITAL","Técnica",32,908,3.52
+"PRIN","MUNICIPAL PROVINCIAL","Secundaria",93,242,38.43
+"PRIN","MUNICIPAL PROVINCIAL","Universitaria",76,242,31.4
+"PRIN","MUNICIPAL PROVINCIAL","Sin datos",31,242,12.81
+"PRIN","MUNICIPAL PROVINCIAL","Posgrado",27,242,11.16
+"PRIN","MUNICIPAL PROVINCIAL","Técnica",10,242,4.13
+"PRIN","MUNICIPAL PROVINCIAL","Primaria",5,242,2.07
+"PRIN","REGIONAL","Universitaria",16,40,40
+"PRIN","REGIONAL","Posgrado",14,40,35
+"PRIN","REGIONAL","Secundaria",8,40,20
+"PRIN","REGIONAL","Primaria",2,40,5
+"Partido Demócrata Verde","GENERAL","Secundaria",928,1601,57.96
+"Partido Demócrata Verde","GENERAL","Universitaria",310,1601,19.36
+"Partido Demócrata Verde","GENERAL","Sin datos",156,1601,9.74
+"Partido Demócrata Verde","GENERAL","Posgrado",84,1601,5.25
+"Partido Demócrata Verde","GENERAL","Primaria",84,1601,5.25
+"Partido Demócrata Verde","GENERAL","Técnica",39,1601,2.44
+"Partido Demócrata Verde","MUNICIPAL DISTRITAL","Secundaria",739,1186,62.31
+"Partido Demócrata Verde","MUNICIPAL DISTRITAL","Universitaria",192,1186,16.19
+"Partido Demócrata Verde","MUNICIPAL DISTRITAL","Sin datos",124,1186,10.46
+"Partido Demócrata Verde","MUNICIPAL DISTRITAL","Primaria",67,1186,5.65
+"Partido Demócrata Verde","MUNICIPAL DISTRITAL","Posgrado",40,1186,3.37
+"Partido Demócrata Verde","MUNICIPAL DISTRITAL","Técnica",24,1186,2.02
+"Partido Demócrata Verde","MUNICIPAL PROVINCIAL","Secundaria",173,349,49.57
+"Partido Demócrata Verde","MUNICIPAL PROVINCIAL","Universitaria",97,349,27.79
+"Partido Demócrata Verde","MUNICIPAL PROVINCIAL","Posgrado",33,349,9.46
+"Partido Demócrata Verde","MUNICIPAL PROVINCIAL","Sin datos",17,349,4.87
+"Partido Demócrata Verde","MUNICIPAL PROVINCIAL","Primaria",16,349,4.58
+"Partido Demócrata Verde","MUNICIPAL PROVINCIAL","Técnica",13,349,3.72
+"Partido Demócrata Verde","REGIONAL","Universitaria",21,66,31.82
+"Partido Demócrata Verde","REGIONAL","Secundaria",16,66,24.24
+"Partido Demócrata Verde","REGIONAL","Sin datos",15,66,22.73
+"Partido Demócrata Verde","REGIONAL","Posgrado",11,66,16.67
+"Partido Demócrata Verde","REGIONAL","Técnica",2,66,3.03
+"Partido Demócrata Verde","REGIONAL","Primaria",1,66,1.52
+"Partido Morado","GENERAL","Secundaria",230,552,41.67
+"Partido Morado","GENERAL","Universitaria",176,552,31.88
+"Partido Morado","GENERAL","Sin datos",58,552,10.51
+"Partido Morado","GENERAL","Posgrado",54,552,9.78
+"Partido Morado","GENERAL","Primaria",19,552,3.44
+"Partido Morado","GENERAL","Técnica",15,552,2.72
+"Partido Morado","MUNICIPAL DISTRITAL","Secundaria",192,437,43.94
+"Partido Morado","MUNICIPAL DISTRITAL","Universitaria",140,437,32.04
+"Partido Morado","MUNICIPAL DISTRITAL","Posgrado",40,437,9.15
+"Partido Morado","MUNICIPAL DISTRITAL","Sin datos",34,437,7.78
+"Partido Morado","MUNICIPAL DISTRITAL","Primaria",19,437,4.35
+"Partido Morado","MUNICIPAL DISTRITAL","Técnica",12,437,2.75
+"Partido Morado","MUNICIPAL PROVINCIAL","Secundaria",35,91,38.46
+"Partido Morado","MUNICIPAL PROVINCIAL","Universitaria",32,91,35.16
+"Partido Morado","MUNICIPAL PROVINCIAL","Posgrado",14,91,15.38
+"Partido Morado","MUNICIPAL PROVINCIAL","Sin datos",7,91,7.69
+"Partido Morado","MUNICIPAL PROVINCIAL","Técnica",3,91,3.3
+"Partido Morado","REGIONAL","Sin datos",17,24,70.83
+"Partido Morado","REGIONAL","Universitaria",4,24,16.67
+"Partido Morado","REGIONAL","Secundaria",3,24,12.5
+"Partido Patriótico del Perú","GENERAL","Sin datos",203,401,50.62
+"Partido Patriótico del Perú","GENERAL","Secundaria",123,401,30.67
+"Partido Patriótico del Perú","GENERAL","Universitaria",48,401,11.97
+"Partido Patriótico del Perú","GENERAL","Posgrado",16,401,3.99
+"Partido Patriótico del Perú","GENERAL","Primaria",7,401,1.75
+"Partido Patriótico del Perú","GENERAL","Técnica",4,401,1
+"Partido Patriótico del Perú","MUNICIPAL DISTRITAL","Sin datos",98,206,47.57
+"Partido Patriótico del Perú","MUNICIPAL DISTRITAL","Secundaria",76,206,36.89
+"Partido Patriótico del Perú","MUNICIPAL DISTRITAL","Universitaria",19,206,9.22
+"Partido Patriótico del Perú","MUNICIPAL DISTRITAL","Posgrado",6,206,2.91
+"Partido Patriótico del Perú","MUNICIPAL DISTRITAL","Primaria",5,206,2.43
+"Partido Patriótico del Perú","MUNICIPAL DISTRITAL","Técnica",2,206,0.97
+"Partido Patriótico del Perú","MUNICIPAL PROVINCIAL","Sin datos",74,153,48.37
+"Partido Patriótico del Perú","MUNICIPAL PROVINCIAL","Secundaria",40,153,26.14
+"Partido Patriótico del Perú","MUNICIPAL PROVINCIAL","Universitaria",26,153,16.99
+"Partido Patriótico del Perú","MUNICIPAL PROVINCIAL","Posgrado",9,153,5.88
+"Partido Patriótico del Perú","MUNICIPAL PROVINCIAL","Primaria",2,153,1.31
+"Partido Patriótico del Perú","MUNICIPAL PROVINCIAL","Técnica",2,153,1.31
+"Partido Patriótico del Perú","REGIONAL","Sin datos",31,42,73.81
+"Partido Patriótico del Perú","REGIONAL","Secundaria",7,42,16.67
+"Partido Patriótico del Perú","REGIONAL","Universitaria",3,42,7.14
+"Partido Patriótico del Perú","REGIONAL","Posgrado",1,42,2.38
+"Partido del Buen Gobierno","GENERAL","Secundaria",456,1069,42.66
+"Partido del Buen Gobierno","GENERAL","Universitaria",254,1069,23.76
+"Partido del Buen Gobierno","GENERAL","Sin datos",222,1069,20.77
+"Partido del Buen Gobierno","GENERAL","Posgrado",86,1069,8.04
+"Partido del Buen Gobierno","GENERAL","Técnica",30,1069,2.81
+"Partido del Buen Gobierno","GENERAL","Primaria",21,1069,1.96
+"Partido del Buen Gobierno","MUNICIPAL DISTRITAL","Secundaria",207,406,50.99
+"Partido del Buen Gobierno","MUNICIPAL DISTRITAL","Universitaria",98,406,24.14
+"Partido del Buen Gobierno","MUNICIPAL DISTRITAL","Sin datos",51,406,12.56
+"Partido del Buen Gobierno","MUNICIPAL DISTRITAL","Posgrado",28,406,6.9
+"Partido del Buen Gobierno","MUNICIPAL DISTRITAL","Técnica",12,406,2.96
+"Partido del Buen Gobierno","MUNICIPAL DISTRITAL","Primaria",10,406,2.46
+"Partido del Buen Gobierno","MUNICIPAL PROVINCIAL","Secundaria",220,524,41.98
+"Partido del Buen Gobierno","MUNICIPAL PROVINCIAL","Universitaria",130,524,24.81
+"Partido del Buen Gobierno","MUNICIPAL PROVINCIAL","Sin datos",108,524,20.61
+"Partido del Buen Gobierno","MUNICIPAL PROVINCIAL","Posgrado",40,524,7.63
+"Partido del Buen Gobierno","MUNICIPAL PROVINCIAL","Técnica",16,524,3.05
+"Partido del Buen Gobierno","MUNICIPAL PROVINCIAL","Primaria",10,524,1.91
+"Partido del Buen Gobierno","REGIONAL","Sin datos",63,139,45.32
+"Partido del Buen Gobierno","REGIONAL","Secundaria",29,139,20.86
+"Partido del Buen Gobierno","REGIONAL","Universitaria",26,139,18.71
+"Partido del Buen Gobierno","REGIONAL","Posgrado",18,139,12.95
+"Partido del Buen Gobierno","REGIONAL","Técnica",2,139,1.44
+"Partido del Buen Gobierno","REGIONAL","Primaria",1,139,0.72
+"País Para Todos","GENERAL","Secundaria",1680,2927,57.4
+"País Para Todos","GENERAL","Universitaria",640,2927,21.87
+"País Para Todos","GENERAL","Sin datos",209,2927,7.14
+"País Para Todos","GENERAL","Primaria",164,2927,5.6
+"País Para Todos","GENERAL","Posgrado",162,2927,5.53
+"País Para Todos","GENERAL","Técnica",72,2927,2.46
+"País Para Todos","MUNICIPAL DISTRITAL","Secundaria",1346,2225,60.49
+"País Para Todos","MUNICIPAL DISTRITAL","Universitaria",431,2225,19.37
+"País Para Todos","MUNICIPAL DISTRITAL","Sin datos",167,2225,7.51
+"País Para Todos","MUNICIPAL DISTRITAL","Primaria",145,2225,6.52
+"País Para Todos","MUNICIPAL DISTRITAL","Posgrado",87,2225,3.91
+"País Para Todos","MUNICIPAL DISTRITAL","Técnica",49,2225,2.2
+"País Para Todos","MUNICIPAL PROVINCIAL","Secundaria",272,554,49.1
+"País Para Todos","MUNICIPAL PROVINCIAL","Universitaria",160,554,28.88
+"País Para Todos","MUNICIPAL PROVINCIAL","Posgrado",57,554,10.29
+"País Para Todos","MUNICIPAL PROVINCIAL","Sin datos",30,554,5.42
+"País Para Todos","MUNICIPAL PROVINCIAL","Técnica",19,554,3.43
+"País Para Todos","MUNICIPAL PROVINCIAL","Primaria",16,554,2.89
+"País Para Todos","REGIONAL","Secundaria",62,148,41.89
+"País Para Todos","REGIONAL","Universitaria",49,148,33.11
+"País Para Todos","REGIONAL","Posgrado",18,148,12.16
+"País Para Todos","REGIONAL","Sin datos",12,148,8.11
+"País Para Todos","REGIONAL","Técnica",4,148,2.7
+"País Para Todos","REGIONAL","Primaria",3,148,2.03
+"Perú Libre","GENERAL","Secundaria",359,671,53.5
+"Perú Libre","GENERAL","Universitaria",123,671,18.33
+"Perú Libre","GENERAL","Sin datos",98,671,14.61
+"Perú Libre","GENERAL","Posgrado",33,671,4.92
+"Perú Libre","GENERAL","Primaria",31,671,4.62
+"Perú Libre","GENERAL","Técnica",27,671,4.02
+"Perú Libre","MUNICIPAL DISTRITAL","Secundaria",284,491,57.84
+"Perú Libre","MUNICIPAL DISTRITAL","Universitaria",78,491,15.89
+"Perú Libre","MUNICIPAL DISTRITAL","Sin datos",72,491,14.66
+"Perú Libre","MUNICIPAL DISTRITAL","Primaria",27,491,5.5
+"Perú Libre","MUNICIPAL DISTRITAL","Técnica",18,491,3.67
+"Perú Libre","MUNICIPAL DISTRITAL","Posgrado",12,491,2.44
+"Perú Libre","MUNICIPAL PROVINCIAL","Secundaria",58,152,38.16
+"Perú Libre","MUNICIPAL PROVINCIAL","Universitaria",42,152,27.63
+"Perú Libre","MUNICIPAL PROVINCIAL","Sin datos",26,152,17.11
+"Perú Libre","MUNICIPAL PROVINCIAL","Posgrado",16,152,10.53
+"Perú Libre","MUNICIPAL PROVINCIAL","Técnica",8,152,5.26
+"Perú Libre","MUNICIPAL PROVINCIAL","Primaria",2,152,1.32
+"Perú Libre","REGIONAL","Secundaria",17,28,60.71
+"Perú Libre","REGIONAL","Posgrado",5,28,17.86
+"Perú Libre","REGIONAL","Universitaria",3,28,10.71
+"Perú Libre","REGIONAL","Primaria",2,28,7.14
+"Perú Libre","REGIONAL","Técnica",1,28,3.57
+"Perú Moderno","GENERAL","Secundaria",476,810,58.77
+"Perú Moderno","GENERAL","Universitaria",154,810,19.01
+"Perú Moderno","GENERAL","Sin datos",58,810,7.16
+"Perú Moderno","GENERAL","Primaria",47,810,5.8
+"Perú Moderno","GENERAL","Posgrado",41,810,5.06
+"Perú Moderno","GENERAL","Técnica",34,810,4.2
+"Perú Moderno","MUNICIPAL DISTRITAL","Secundaria",359,576,62.33
+"Perú Moderno","MUNICIPAL DISTRITAL","Universitaria",110,576,19.1
+"Perú Moderno","MUNICIPAL DISTRITAL","Primaria",34,576,5.9
+"Perú Moderno","MUNICIPAL DISTRITAL","Sin datos",25,576,4.34
+"Perú Moderno","MUNICIPAL DISTRITAL","Posgrado",24,576,4.17
+"Perú Moderno","MUNICIPAL DISTRITAL","Técnica",24,576,4.17
+"Perú Moderno","MUNICIPAL PROVINCIAL","Secundaria",106,188,56.38
+"Perú Moderno","MUNICIPAL PROVINCIAL","Universitaria",34,188,18.09
+"Perú Moderno","MUNICIPAL PROVINCIAL","Sin datos",16,188,8.51
+"Perú Moderno","MUNICIPAL PROVINCIAL","Posgrado",12,188,6.38
+"Perú Moderno","MUNICIPAL PROVINCIAL","Primaria",10,188,5.32
+"Perú Moderno","MUNICIPAL PROVINCIAL","Técnica",10,188,5.32
+"Perú Moderno","REGIONAL","Sin datos",17,46,36.96
+"Perú Moderno","REGIONAL","Secundaria",11,46,23.91
+"Perú Moderno","REGIONAL","Universitaria",10,46,21.74
+"Perú Moderno","REGIONAL","Posgrado",5,46,10.87
+"Perú Moderno","REGIONAL","Primaria",3,46,6.52
+"Perú Primero","GENERAL","Secundaria",4112,7563,54.37
+"Perú Primero","GENERAL","Universitaria",1755,7563,23.21
+"Perú Primero","GENERAL","Sin datos",599,7563,7.92
+"Perú Primero","GENERAL","Posgrado",476,7563,6.29
+"Perú Primero","GENERAL","Primaria",389,7563,5.14
+"Perú Primero","GENERAL","Técnica",232,7563,3.07
+"Perú Primero","MUNICIPAL DISTRITAL","Secundaria",3496,5976,58.5
+"Perú Primero","MUNICIPAL DISTRITAL","Universitaria",1263,5976,21.13
+"Perú Primero","MUNICIPAL DISTRITAL","Sin datos",432,5976,7.23
+"Perú Primero","MUNICIPAL DISTRITAL","Primaria",357,5976,5.97
+"Perú Primero","MUNICIPAL DISTRITAL","Posgrado",249,5976,4.17
+"Perú Primero","MUNICIPAL DISTRITAL","Técnica",179,5976,3
+"Perú Primero","MUNICIPAL PROVINCIAL","Secundaria",550,1273,43.21
+"Perú Primero","MUNICIPAL PROVINCIAL","Universitaria",401,1273,31.5
+"Perú Primero","MUNICIPAL PROVINCIAL","Posgrado",172,1273,13.51
+"Perú Primero","MUNICIPAL PROVINCIAL","Sin datos",79,1273,6.21
+"Perú Primero","MUNICIPAL PROVINCIAL","Técnica",44,1273,3.46
+"Perú Primero","MUNICIPAL PROVINCIAL","Primaria",27,1273,2.12
+"Perú Primero","REGIONAL","Universitaria",91,314,28.98
+"Perú Primero","REGIONAL","Sin datos",88,314,28.03
+"Perú Primero","REGIONAL","Secundaria",66,314,21.02
+"Perú Primero","REGIONAL","Posgrado",55,314,17.52
+"Perú Primero","REGIONAL","Técnica",9,314,2.87
+"Perú Primero","REGIONAL","Primaria",5,314,1.59
+"Podemos Perú","GENERAL","Secundaria",4184,7292,57.38
+"Podemos Perú","GENERAL","Universitaria",1693,7292,23.22
+"Podemos Perú","GENERAL","Sin datos",480,7292,6.58
+"Podemos Perú","GENERAL","Posgrado",418,7292,5.73
+"Podemos Perú","GENERAL","Primaria",317,7292,4.35
+"Podemos Perú","GENERAL","Técnica",200,7292,2.74
+"Podemos Perú","MUNICIPAL DISTRITAL","Secundaria",3557,5839,60.92
+"Podemos Perú","MUNICIPAL DISTRITAL","Universitaria",1213,5839,20.77
+"Podemos Perú","MUNICIPAL DISTRITAL","Sin datos",417,5839,7.14
+"Podemos Perú","MUNICIPAL DISTRITAL","Primaria",274,5839,4.69
+"Podemos Perú","MUNICIPAL DISTRITAL","Posgrado",231,5839,3.96
+"Podemos Perú","MUNICIPAL DISTRITAL","Técnica",147,5839,2.52
+"Podemos Perú","MUNICIPAL PROVINCIAL","Secundaria",549,1213,45.26
+"Podemos Perú","MUNICIPAL PROVINCIAL","Universitaria",391,1213,32.23
+"Podemos Perú","MUNICIPAL PROVINCIAL","Posgrado",143,1213,11.79
+"Podemos Perú","MUNICIPAL PROVINCIAL","Sin datos",48,1213,3.96
+"Podemos Perú","MUNICIPAL PROVINCIAL","Técnica",47,1213,3.87
+"Podemos Perú","MUNICIPAL PROVINCIAL","Primaria",35,1213,2.89
+"Podemos Perú","REGIONAL","Universitaria",89,240,37.08
+"Podemos Perú","REGIONAL","Secundaria",78,240,32.5
+"Podemos Perú","REGIONAL","Posgrado",44,240,18.33
+"Podemos Perú","REGIONAL","Sin datos",15,240,6.25
+"Podemos Perú","REGIONAL","Primaria",8,240,3.33
+"Podemos Perú","REGIONAL","Técnica",6,240,2.5
+"Primero la Gente","GENERAL","Sin datos",133,246,54.07
+"Primero la Gente","GENERAL","Secundaria",73,246,29.67
+"Primero la Gente","GENERAL","Universitaria",30,246,12.2
+"Primero la Gente","GENERAL","Posgrado",6,246,2.44
+"Primero la Gente","GENERAL","Primaria",2,246,0.81
+"Primero la Gente","GENERAL","Técnica",2,246,0.81
+"Primero la Gente","MUNICIPAL DISTRITAL","Secundaria",48,94,51.06
+"Primero la Gente","MUNICIPAL DISTRITAL","Universitaria",24,94,25.53
+"Primero la Gente","MUNICIPAL DISTRITAL","Sin datos",17,94,18.09
+"Primero la Gente","MUNICIPAL DISTRITAL","Posgrado",3,94,3.19
+"Primero la Gente","MUNICIPAL DISTRITAL","Técnica",2,94,2.13
+"Primero la Gente","MUNICIPAL PROVINCIAL","Sin datos",52,88,59.09
+"Primero la Gente","MUNICIPAL PROVINCIAL","Secundaria",25,88,28.41
+"Primero la Gente","MUNICIPAL PROVINCIAL","Universitaria",6,88,6.82
+"Primero la Gente","MUNICIPAL PROVINCIAL","Posgrado",3,88,3.41
+"Primero la Gente","MUNICIPAL PROVINCIAL","Primaria",2,88,2.27
+"Primero la Gente","REGIONAL","Sin datos",64,64,100
+"Progresemos","GENERAL","Secundaria",1912,3579,53.42
+"Progresemos","GENERAL","Universitaria",899,3579,25.12
+"Progresemos","GENERAL","Sin datos",274,3579,7.66
+"Progresemos","GENERAL","Posgrado",263,3579,7.35
+"Progresemos","GENERAL","Técnica",119,3579,3.32
+"Progresemos","GENERAL","Primaria",112,3579,3.13
+"Progresemos","MUNICIPAL DISTRITAL","Secundaria",1547,2744,56.38
+"Progresemos","MUNICIPAL DISTRITAL","Universitaria",641,2744,23.36
+"Progresemos","MUNICIPAL DISTRITAL","Sin datos",211,2744,7.69
+"Progresemos","MUNICIPAL DISTRITAL","Posgrado",152,2744,5.54
+"Progresemos","MUNICIPAL DISTRITAL","Técnica",97,2744,3.53
+"Progresemos","MUNICIPAL DISTRITAL","Primaria",96,2744,3.5
+"Progresemos","MUNICIPAL PROVINCIAL","Secundaria",309,691,44.72
+"Progresemos","MUNICIPAL PROVINCIAL","Universitaria",206,691,29.81
+"Progresemos","MUNICIPAL PROVINCIAL","Posgrado",86,691,12.45
+"Progresemos","MUNICIPAL PROVINCIAL","Sin datos",59,691,8.54
+"Progresemos","MUNICIPAL PROVINCIAL","Técnica",16,691,2.32
+"Progresemos","MUNICIPAL PROVINCIAL","Primaria",15,691,2.17
+"Progresemos","REGIONAL","Secundaria",56,144,38.89
+"Progresemos","REGIONAL","Universitaria",52,144,36.11
+"Progresemos","REGIONAL","Posgrado",25,144,17.36
+"Progresemos","REGIONAL","Técnica",6,144,4.17
+"Progresemos","REGIONAL","Sin datos",4,144,2.78
+"Progresemos","REGIONAL","Primaria",1,144,0.69
+"Pueblo Consciente","GENERAL","Sin datos",610,781,78.1
+"Pueblo Consciente","GENERAL","Secundaria",102,781,13.06
+"Pueblo Consciente","GENERAL","Universitaria",38,781,4.87
+"Pueblo Consciente","GENERAL","Posgrado",15,781,1.92
+"Pueblo Consciente","GENERAL","Técnica",9,781,1.15
+"Pueblo Consciente","GENERAL","Primaria",7,781,0.9
+"Pueblo Consciente","MUNICIPAL DISTRITAL","Secundaria",54,104,51.92
+"Pueblo Consciente","MUNICIPAL DISTRITAL","Sin datos",27,104,25.96
+"Pueblo Consciente","MUNICIPAL DISTRITAL","Universitaria",10,104,9.62
+"Pueblo Consciente","MUNICIPAL DISTRITAL","Posgrado",8,104,7.69
+"Pueblo Consciente","MUNICIPAL DISTRITAL","Técnica",3,104,2.88
+"Pueblo Consciente","MUNICIPAL DISTRITAL","Primaria",2,104,1.92
+"Pueblo Consciente","MUNICIPAL PROVINCIAL","Sin datos",426,489,87.12
+"Pueblo Consciente","MUNICIPAL PROVINCIAL","Secundaria",35,489,7.16
+"Pueblo Consciente","MUNICIPAL PROVINCIAL","Universitaria",15,489,3.07
+"Pueblo Consciente","MUNICIPAL PROVINCIAL","Primaria",5,489,1.02
+"Pueblo Consciente","MUNICIPAL PROVINCIAL","Técnica",5,489,1.02
+"Pueblo Consciente","MUNICIPAL PROVINCIAL","Posgrado",3,489,0.61
+"Pueblo Consciente","REGIONAL","Sin datos",157,188,83.51
+"Pueblo Consciente","REGIONAL","Secundaria",13,188,6.91
+"Pueblo Consciente","REGIONAL","Universitaria",13,188,6.91
+"Pueblo Consciente","REGIONAL","Posgrado",4,188,2.13
+"Pueblo Consciente","REGIONAL","Técnica",1,188,0.53
+"Renovación Popular","GENERAL","Secundaria",2653,5313,49.93
+"Renovación Popular","GENERAL","Universitaria",1429,5313,26.9
+"Renovación Popular","GENERAL","Posgrado",450,5313,8.47
+"Renovación Popular","GENERAL","Sin datos",400,5313,7.53
+"Renovación Popular","GENERAL","Primaria",224,5313,4.22
+"Renovación Popular","GENERAL","Técnica",157,5313,2.96
+"Renovación Popular","MUNICIPAL DISTRITAL","Secundaria",2177,4098,53.12
+"Renovación Popular","MUNICIPAL DISTRITAL","Universitaria",1018,4098,24.84
+"Renovación Popular","MUNICIPAL DISTRITAL","Sin datos",295,4098,7.2
+"Renovación Popular","MUNICIPAL DISTRITAL","Posgrado",288,4098,7.03
+"Renovación Popular","MUNICIPAL DISTRITAL","Primaria",205,4098,5
+"Renovación Popular","MUNICIPAL DISTRITAL","Técnica",115,4098,2.81
+"Renovación Popular","MUNICIPAL PROVINCIAL","Secundaria",410,948,43.25
+"Renovación Popular","MUNICIPAL PROVINCIAL","Universitaria",320,948,33.76
+"Renovación Popular","MUNICIPAL PROVINCIAL","Posgrado",102,948,10.76
+"Renovación Popular","MUNICIPAL PROVINCIAL","Sin datos",64,948,6.75
+"Renovación Popular","MUNICIPAL PROVINCIAL","Técnica",34,948,3.59
+"Renovación Popular","MUNICIPAL PROVINCIAL","Primaria",18,948,1.9
+"Renovación Popular","REGIONAL","Universitaria",91,267,34.08
+"Renovación Popular","REGIONAL","Secundaria",66,267,24.72
+"Renovación Popular","REGIONAL","Posgrado",60,267,22.47
+"Renovación Popular","REGIONAL","Sin datos",41,267,15.36
+"Renovación Popular","REGIONAL","Técnica",8,267,3
+"Renovación Popular","REGIONAL","Primaria",1,267,0.37
+"Salvemos al Perú","GENERAL","Secundaria",249,485,51.34
+"Salvemos al Perú","GENERAL","Sin datos",93,485,19.18
+"Salvemos al Perú","GENERAL","Universitaria",76,485,15.67
+"Salvemos al Perú","GENERAL","Posgrado",34,485,7.01
+"Salvemos al Perú","GENERAL","Primaria",21,485,4.33
+"Salvemos al Perú","GENERAL","Técnica",12,485,2.47
+"Salvemos al Perú","MUNICIPAL DISTRITAL","Secundaria",207,341,60.7
+"Salvemos al Perú","MUNICIPAL DISTRITAL","Universitaria",58,341,17.01
+"Salvemos al Perú","MUNICIPAL DISTRITAL","Sin datos",30,341,8.8
+"Salvemos al Perú","MUNICIPAL DISTRITAL","Posgrado",18,341,5.28
+"Salvemos al Perú","MUNICIPAL DISTRITAL","Primaria",18,341,5.28
+"Salvemos al Perú","MUNICIPAL DISTRITAL","Técnica",10,341,2.93
+"Salvemos al Perú","MUNICIPAL PROVINCIAL","Secundaria",42,108,38.89
+"Salvemos al Perú","MUNICIPAL PROVINCIAL","Sin datos",31,108,28.7
+"Salvemos al Perú","MUNICIPAL PROVINCIAL","Universitaria",17,108,15.74
+"Salvemos al Perú","MUNICIPAL PROVINCIAL","Posgrado",13,108,12.04
+"Salvemos al Perú","MUNICIPAL PROVINCIAL","Primaria",3,108,2.78
+"Salvemos al Perú","MUNICIPAL PROVINCIAL","Técnica",2,108,1.85
+"Salvemos al Perú","REGIONAL","Sin datos",32,36,88.89
+"Salvemos al Perú","REGIONAL","Posgrado",3,36,8.33
+"Salvemos al Perú","REGIONAL","Universitaria",1,36,2.78
+"Somos Perú","GENERAL","Secundaria",5049,9198,54.89
+"Somos Perú","GENERAL","Universitaria",2305,9198,25.06
+"Somos Perú","GENERAL","Posgrado",653,9198,7.1
+"Somos Perú","GENERAL","Primaria",526,9198,5.72
+"Somos Perú","GENERAL","Sin datos",363,9198,3.95
+"Somos Perú","GENERAL","Técnica",302,9198,3.28
+"Somos Perú","MUNICIPAL DISTRITAL","Secundaria",4363,7349,59.37
+"Somos Perú","MUNICIPAL DISTRITAL","Universitaria",1596,7349,21.72
+"Somos Perú","MUNICIPAL DISTRITAL","Primaria",488,7349,6.64
+"Somos Perú","MUNICIPAL DISTRITAL","Posgrado",382,7349,5.2
+"Somos Perú","MUNICIPAL DISTRITAL","Sin datos",290,7349,3.95
+"Somos Perú","MUNICIPAL DISTRITAL","Técnica",230,7349,3.13
+"Somos Perú","MUNICIPAL PROVINCIAL","Secundaria",595,1522,39.09
+"Somos Perú","MUNICIPAL PROVINCIAL","Universitaria",564,1522,37.06
+"Somos Perú","MUNICIPAL PROVINCIAL","Posgrado",209,1522,13.73
+"Somos Perú","MUNICIPAL PROVINCIAL","Técnica",67,1522,4.4
+"Somos Perú","MUNICIPAL PROVINCIAL","Sin datos",52,1522,3.42
+"Somos Perú","MUNICIPAL PROVINCIAL","Primaria",35,1522,2.3
+"Somos Perú","REGIONAL","Universitaria",145,327,44.34
+"Somos Perú","REGIONAL","Secundaria",91,327,27.83
+"Somos Perú","REGIONAL","Posgrado",62,327,18.96
+"Somos Perú","REGIONAL","Sin datos",21,327,6.42
+"Somos Perú","REGIONAL","Técnica",5,327,1.53
+"Somos Perú","REGIONAL","Primaria",3,327,0.92
+"SíCreo","GENERAL","Secundaria",74,170,43.53
+"SíCreo","GENERAL","Universitaria",43,170,25.29
+"SíCreo","GENERAL","Sin datos",35,170,20.59
+"SíCreo","GENERAL","Posgrado",12,170,7.06
+"SíCreo","GENERAL","Primaria",3,170,1.76
+"SíCreo","GENERAL","Técnica",3,170,1.76
+"SíCreo","MUNICIPAL DISTRITAL","Secundaria",55,129,42.64
+"SíCreo","MUNICIPAL DISTRITAL","Sin datos",34,129,26.36
+"SíCreo","MUNICIPAL DISTRITAL","Universitaria",26,129,20.16
+"SíCreo","MUNICIPAL DISTRITAL","Posgrado",9,129,6.98
+"SíCreo","MUNICIPAL DISTRITAL","Técnica",3,129,2.33
+"SíCreo","MUNICIPAL DISTRITAL","Primaria",2,129,1.55
+"SíCreo","MUNICIPAL PROVINCIAL","Secundaria",19,41,46.34
+"SíCreo","MUNICIPAL PROVINCIAL","Universitaria",17,41,41.46
+"SíCreo","MUNICIPAL PROVINCIAL","Posgrado",3,41,7.32
+"SíCreo","MUNICIPAL PROVINCIAL","Primaria",1,41,2.44
+"SíCreo","MUNICIPAL PROVINCIAL","Sin datos",1,41,2.44
+"Todo con el Pueblo","GENERAL","Sin datos",159,374,42.51
+"Todo con el Pueblo","GENERAL","Secundaria",125,374,33.42
+"Todo con el Pueblo","GENERAL","Universitaria",43,374,11.5
+"Todo con el Pueblo","GENERAL","Primaria",29,374,7.75
+"Todo con el Pueblo","GENERAL","Posgrado",15,374,4.01
+"Todo con el Pueblo","GENERAL","Técnica",3,374,0.8
+"Todo con el Pueblo","MUNICIPAL DISTRITAL","Secundaria",48,91,52.75
+"Todo con el Pueblo","MUNICIPAL DISTRITAL","Sin datos",16,91,17.58
+"Todo con el Pueblo","MUNICIPAL DISTRITAL","Primaria",14,91,15.38
+"Todo con el Pueblo","MUNICIPAL DISTRITAL","Universitaria",9,91,9.89
+"Todo con el Pueblo","MUNICIPAL DISTRITAL","Posgrado",4,91,4.4
+"Todo con el Pueblo","MUNICIPAL PROVINCIAL","Secundaria",50,144,34.72
+"Todo con el Pueblo","MUNICIPAL PROVINCIAL","Sin datos",47,144,32.64
+"Todo con el Pueblo","MUNICIPAL PROVINCIAL","Universitaria",23,144,15.97
+"Todo con el Pueblo","MUNICIPAL PROVINCIAL","Primaria",13,144,9.03
+"Todo con el Pueblo","MUNICIPAL PROVINCIAL","Posgrado",9,144,6.25
+"Todo con el Pueblo","MUNICIPAL PROVINCIAL","Técnica",2,144,1.39
+"Todo con el Pueblo","REGIONAL","Sin datos",96,139,69.06
+"Todo con el Pueblo","REGIONAL","Secundaria",27,139,19.42
+"Todo con el Pueblo","REGIONAL","Universitaria",11,139,7.91
+"Todo con el Pueblo","REGIONAL","Posgrado",2,139,1.44
+"Todo con el Pueblo","REGIONAL","Primaria",2,139,1.44
+"Todo con el Pueblo","REGIONAL","Técnica",1,139,0.72
+"Un Camino Diferente","GENERAL","Secundaria",87,181,48.07
+"Un Camino Diferente","GENERAL","Universitaria",57,181,31.49
+"Un Camino Diferente","GENERAL","Sin datos",17,181,9.39
+"Un Camino Diferente","GENERAL","Posgrado",11,181,6.08
+"Un Camino Diferente","GENERAL","Primaria",5,181,2.76
+"Un Camino Diferente","GENERAL","Técnica",4,181,2.21
+"Un Camino Diferente","MUNICIPAL DISTRITAL","Secundaria",68,138,49.28
+"Un Camino Diferente","MUNICIPAL DISTRITAL","Universitaria",38,138,27.54
+"Un Camino Diferente","MUNICIPAL DISTRITAL","Sin datos",17,138,12.32
+"Un Camino Diferente","MUNICIPAL DISTRITAL","Posgrado",7,138,5.07
+"Un Camino Diferente","MUNICIPAL DISTRITAL","Primaria",4,138,2.9
+"Un Camino Diferente","MUNICIPAL DISTRITAL","Técnica",4,138,2.9
+"Un Camino Diferente","MUNICIPAL PROVINCIAL","Secundaria",19,43,44.19
+"Un Camino Diferente","MUNICIPAL PROVINCIAL","Universitaria",19,43,44.19
+"Un Camino Diferente","MUNICIPAL PROVINCIAL","Posgrado",4,43,9.3
+"Un Camino Diferente","MUNICIPAL PROVINCIAL","Primaria",1,43,2.33
+"Unidad y Paz","GENERAL","Sin datos",57,121,47.11
+"Unidad y Paz","GENERAL","Secundaria",39,121,32.23
+"Unidad y Paz","GENERAL","Universitaria",19,121,15.7
+"Unidad y Paz","GENERAL","Técnica",4,121,3.31
+"Unidad y Paz","GENERAL","Posgrado",1,121,0.83
+"Unidad y Paz","GENERAL","Primaria",1,121,0.83
+"Unidad y Paz","MUNICIPAL DISTRITAL","Sin datos",57,121,47.11
+"Unidad y Paz","MUNICIPAL DISTRITAL","Secundaria",39,121,32.23
+"Unidad y Paz","MUNICIPAL DISTRITAL","Universitaria",19,121,15.7
+"Unidad y Paz","MUNICIPAL DISTRITAL","Técnica",4,121,3.31
+"Unidad y Paz","MUNICIPAL DISTRITAL","Posgrado",1,121,0.83
+"Unidad y Paz","MUNICIPAL DISTRITAL","Primaria",1,121,0.83
+"Unido Perú","GENERAL","Sin datos",191,316,60.44
+"Unido Perú","GENERAL","Secundaria",69,316,21.84
+"Unido Perú","GENERAL","Universitaria",33,316,10.44
+"Unido Perú","GENERAL","Posgrado",14,316,4.43
+"Unido Perú","GENERAL","Primaria",5,316,1.58
+"Unido Perú","GENERAL","Técnica",4,316,1.27
+"Unido Perú","MUNICIPAL DISTRITAL","Sin datos",130,190,68.42
+"Unido Perú","MUNICIPAL DISTRITAL","Secundaria",42,190,22.11
+"Unido Perú","MUNICIPAL DISTRITAL","Universitaria",7,190,3.68
+"Unido Perú","MUNICIPAL DISTRITAL","Posgrado",5,190,2.63
+"Unido Perú","MUNICIPAL DISTRITAL","Primaria",5,190,2.63
+"Unido Perú","MUNICIPAL DISTRITAL","Técnica",1,190,0.53
+"Unido Perú","MUNICIPAL PROVINCIAL","Sin datos",53,100,53
+"Unido Perú","MUNICIPAL PROVINCIAL","Secundaria",20,100,20
+"Unido Perú","MUNICIPAL PROVINCIAL","Universitaria",19,100,19
+"Unido Perú","MUNICIPAL PROVINCIAL","Posgrado",5,100,5
+"Unido Perú","MUNICIPAL PROVINCIAL","Técnica",3,100,3
+"Unido Perú","REGIONAL","Sin datos",8,26,30.77
+"Unido Perú","REGIONAL","Secundaria",7,26,26.92
+"Unido Perú","REGIONAL","Universitaria",7,26,26.92
+"Unido Perú","REGIONAL","Posgrado",4,26,15.38
+"Venceremos","GENERAL","Secundaria",1002,1963,51.04
+"Venceremos","GENERAL","Universitaria",494,1963,25.17
+"Venceremos","GENERAL","Posgrado",168,1963,8.56
+"Venceremos","GENERAL","Sin datos",155,1963,7.9
+"Venceremos","GENERAL","Primaria",81,1963,4.13
+"Venceremos","GENERAL","Técnica",63,1963,3.21
+"Venceremos","MUNICIPAL DISTRITAL","Secundaria",709,1245,56.95
+"Venceremos","MUNICIPAL DISTRITAL","Universitaria",275,1245,22.09
+"Venceremos","MUNICIPAL DISTRITAL","Sin datos",80,1245,6.43
+"Venceremos","MUNICIPAL DISTRITAL","Posgrado",68,1245,5.46
+"Venceremos","MUNICIPAL DISTRITAL","Primaria",68,1245,5.46
+"Venceremos","MUNICIPAL DISTRITAL","Técnica",45,1245,3.61
+"Venceremos","MUNICIPAL PROVINCIAL","Secundaria",213,510,41.76
+"Venceremos","MUNICIPAL PROVINCIAL","Universitaria",152,510,29.8
+"Venceremos","MUNICIPAL PROVINCIAL","Sin datos",61,510,11.96
+"Venceremos","MUNICIPAL PROVINCIAL","Posgrado",59,510,11.57
+"Venceremos","MUNICIPAL PROVINCIAL","Técnica",16,510,3.14
+"Venceremos","MUNICIPAL PROVINCIAL","Primaria",9,510,1.76
+"Venceremos","REGIONAL","Secundaria",80,208,38.46
+"Venceremos","REGIONAL","Universitaria",67,208,32.21
+"Venceremos","REGIONAL","Posgrado",41,208,19.71
+"Venceremos","REGIONAL","Sin datos",14,208,6.73
+"Venceremos","REGIONAL","Primaria",4,208,1.92
+"Venceremos","REGIONAL","Técnica",2,208,0.96

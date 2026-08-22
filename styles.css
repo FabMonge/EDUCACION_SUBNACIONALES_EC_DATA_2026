@@ -1,0 +1,307 @@
+/* =========================================
+   1. RESET Y CONFIGURACIÓN BASE
+   ========================================= */
+body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Arial', sans-serif; }
+
+/* =========================================
+   2. HEADER Y EDITORIAL (Estilo Sobrio/Político)
+   ========================================= */
+.mega-nota-container { width: 100%; position: relative; overflow: hidden; background-color: #111; }
+.special-header { max-width: 900px; margin: 60px auto 40px auto; padding: 0 20px; text-align: center; }
+.kicker { margin-bottom: 25px; display: flex; justify-content: center; align-items: center; }
+.headline { font-family: 'Georgia', 'Times New Roman', serif; font-size: 56px; font-weight: 900; color: #111; line-height: 1.1; margin-top: 0; margin-bottom: 15px; letter-spacing: -1px; }
+.subheadline { font-family: 'Georgia', 'Times New Roman', serif; font-size: 24px; font-weight: 400; color: #444; line-height: 1.4; margin-top: 0; margin-bottom: 30px; }
+.header-divider { width: 50px; height: 1px; background-color: #333; margin: 30px auto 15px auto; }
+.date-published { font-size: 13px; color: #666; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+
+.story-text { max-width: 700px; margin: 0 auto 20px auto; padding: 0 20px; }
+.story-text p { font-size: 18px; line-height: 1.7; margin-bottom: 22px; color: #222; }
+.story-text h2 { font-family: 'Georgia', serif; font-size: 26px; font-weight: bold; color: #111; margin-top: 50px; margin-bottom: 20px; }
+
+/* =========================================
+   3. TARJETAS DE MÉTRICAS (KPIs)
+   ========================================= */
+.metrics-container {
+    max-width: 900px; margin: 0 auto 40px auto; padding: 0 20px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;
+}
+.metric-card {
+    background: #f9f9f9; border-top: 4px solid #7B241C; padding: 25px 15px;
+    text-align: center; border-radius: 0 0 6px 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.metric-title { font-size: 14px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.metric-value { font-size: 48px; font-weight: 900; color: #111; line-height: 1; }
+
+/* =========================================
+   4. DASHBOARD D3 Y VISUALIZACIÓN
+   ========================================= */
+.viz-container { max-width: 1000px; margin: 0 auto 30px auto; padding: 0 20px; position: relative; }
+.dashboard-centered { display: flex; justify-content: center; align-items: center; width: 100%; }
+
+.error-message {
+    background-color: #FDEDEC; border: 1px solid #E6B0AA; color: #C0392B;
+    padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; margin-bottom: 20px;
+}
+
+#dashboard-educacion svg,
+#chart-carreras svg {
+    max-width: 650px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+
+.polyline-guide { fill: none; stroke: #999; stroke-width: 1px; opacity: 0.6; }
+.label-category { font-size: 14px; fill: #333; font-weight: 400; font-family: 'Arial', sans-serif; }
+.label-percentage { font-size: 16px; font-weight: 900; font-family: 'Arial', sans-serif; }
+.label-absolute { font-size: 12px; fill: #666; font-family: 'Arial', sans-serif; }
+
+/* =========================================
+   5. NOTAS Y FOOTER
+   ========================================= */
+.data-clarification { font-family: 'Georgia', serif; font-size: 14px; color: #555; font-style: italic; text-align: center; max-width: 800px; margin: 20px auto 10px auto; padding: 0 20px; line-height: 1.4;}
+.source-note { font-size: 13px; color: #888; max-width: 800px; margin: 0 auto 50px auto; padding: 0 20px; text-align: center; font-family: Arial, sans-serif; }
+
+.special-credits-black { background-color: #111; color: #fff; padding: 60px 20px; text-align: center; margin-top: 60px; }
+.credits-main-title { font-family: 'Georgia', serif; font-size: 20px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-top: 0; margin-bottom: 30px; }
+.credit-block { margin-bottom: 20px; display: flex; flex-direction: column; align-items: center; }
+.credit-role { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #aaa; margin-bottom: 5px; letter-spacing: 1px; }
+.credit-name { font-family: 'Georgia', serif; font-size: 16px; }
+.copyright-text { font-size: 11px; color: #777; margin-top: 30px; }
+
+/* =========================================
+   7. NUEVAS GRILLAS (EDADES Y SMALL MULTIPLES)
+   ========================================= */
+.age-charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.small-multiples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+
+.panel { 
+    background: #ffffff; 
+    border: none; 
+    padding: 10px 0; 
+    display: flex; flex-direction: column; align-items: center; 
+}
+.panel-title { 
+    text-align: center; font-family: 'Georgia', serif; font-weight: bold; 
+    text-transform: uppercase; font-size: 14px; letter-spacing: 1px; 
+    margin-bottom: 15px; color: #111; width: 100%;
+}
+
+.dumbbell-line { stroke: #ccc; stroke-width: 2px; }
+.dumbbell-circle-min { fill: #2E4053; } 
+.dumbbell-circle-max { fill: #7B241C; } 
+.dumbbell-text { font-family: 'Arial', sans-serif; font-size: 11px; font-weight: bold; fill: #333; }
+
+.large-viz-container {
+    max-width: 1200px; 
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.axis-x-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    fill: #333;
+}
+
+.age-charts-grid .panel svg {
+    max-width: 1000px !important; 
+    height: 300px !important;
+}
+
+.large-viz-container .panel svg {
+    width: 100%;
+    max-width: 1000px !important;
+    height: 500px !important;
+}
+
+.legend-pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.legend-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f9f9f9;
+    border: 1px solid #eaeaea;
+    padding: 6px 14px;
+    border-radius: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.legend-color-box {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+}
+
+.legend-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* =========================================
+   8. TOOLTIPS PARA GRÁFICOS
+   ========================================= */
+.d3-tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 10px 14px;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    background: rgba(17, 17, 17, 0.9);
+    color: #fff;
+    border-radius: 4px;
+    pointer-events: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    line-height: 1.5;
+}
+
+/* =========================================
+   9. HERRAMIENTA INTERACTIVA (NUEVO)
+   ========================================= */
+.interactive-dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    padding: 30px;
+    background: #fdfdfd;
+    border: 1px solid #eaeaea;
+    border-top: 4px solid #2E4053;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.dashboard-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.control-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.custom-input-select {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 320px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #fff;
+}
+
+.custom-input-select:focus {
+    border-color: #2E4053;
+}
+
+.toggle-group {
+    display: flex;
+    border: 2px solid #2E4053;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.toggle-btn {
+    background: #fff;
+    color: #2E4053;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-right: 1px solid #2E4053;
+}
+
+.toggle-btn:last-child {
+    border-right: none;
+}
+
+.toggle-btn:hover {
+    background: #f0f0f0;
+}
+
+.toggle-btn.active {
+    background: #2E4053;
+    color: #fff;
+}
+
+.interactive-kpis {
+    margin-bottom: 40px;
+}
+
+.interactive-charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* =========================================
+   6. RESPONSIVE (MOBILE FIRST REAL)
+   ========================================= */
+@media (max-width: 768px) {
+    .headline { font-size: 38px; }
+    .subheadline { font-size: 18px; }
+    .metric-value { font-size: 36px; }
+    .metrics-container { grid-template-columns: 1fr; gap: 15px; }
+    .label-category { font-size: 12px; }
+    .label-percentage { font-size: 14px; }
+    .age-charts-grid, .interactive-charts-grid { grid-template-columns: 1fr; }
+    
+    .dashboard-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    .custom-input-select {
+        width: 100%;
+        min-width: 280px;
+    }
+    .toggle-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    .toggle-btn {
+        border-right: none;
+        border-bottom: 1px solid #2E4053;
+    }
+    .toggle-btn:last-child {
+        border-bottom: none;
+    }
+}
