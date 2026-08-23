@@ -33,14 +33,15 @@
 
     <header class="special-header">
         <div class="kicker">
-            <span style="font-family: Arial; font-weight: bold; text-transform: uppercase; color: #7B241C; letter-spacing: 2px;">ECData</span>
+            <img src="https://fabmonge.github.io/Voto_estrategico_f/fotos/logo_ecdata.png" alt="Logo ECData" onerror="this.style.display='none'">
+        </div>
         </div>
         
-        <h1 class="headline">RADIOGRAFÍA EDUCATIVA DE LOS CANDIDATOS A LAS ELECCIONES SUBNACIONALES</h1>
+        <h1 class="headline">Radiografía educativa de los candidatos a las elecciones subnacionales</h1>
         <h2 class="subheadline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</h2>
         
         <div class="header-divider"></div>
-        <div class="date-published">Agosto del 2026</div>
+        <div class="date-published">24 de Agosto del 2026</div>
     </header>
 
     <article class="story-text">
@@ -65,16 +66,13 @@
         </div>
     </div>
 
-    <!-- Contenedor del Gráfico D3 -->
+    <!-- Contenedor del Gráfico Flourish -->
     <div class="viz-container">
-        <div id="chart-error-message" class="error-message" style="display: none;">
-            Lo sentimos, hubo un problema al cargar la visualización.
-        </div>
-        <div id="dashboard-educacion" class="dashboard-centered"></div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/30042676"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30042676/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
     </div>
     
-    <div class="data-clarification">*Incluye postulantes a: gobernador regional, vicegobernador regional, alcalde provincial, alcalde distrital, regidor provincial y regidor distrital. No se incluyeron los accesitarios.<br>** Incluye maestrías y doctorados.</div>
-    <div class="source-note"><strong>Fuente:</strong> JNE | <strong>Elaboración:</strong> ECData</div>
+    <div class="data-clarification">*Incluye postulantes a: gobernador regional, vicegobernador regional, alcalde provincial, alcalde distrital, regidor provincial y regidor distrital. No se incluyeron los accesitarios.</div>
+    <div class="source-note"><strong>Fuente:</strong> JNE, Mathieu Rojas | <strong>Elaboración:</strong> ECData</div>
 
     <article class="story-text">
         <p>Un párrafo de texto falso. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -92,6 +90,7 @@
             <div id="chart-edad-rango"></div>
         </div>
     </div>
+    <div class="source-note"><strong>Fuente:</strong> JNE, Mathieu Rojas | <strong>Elaboración:</strong> ECData</div>
 
     <article class="story-text">
         <p><strong>Dato:</strong> Cerca del 20% de los candidatos a alcaldías provinciales no registran estudios después de la secundaria. Además, más de dos tercios de los candidatos a alcaldías distritales no registran estudios después de la secundaria.</p>
@@ -107,7 +106,7 @@
         </div>
     </div>
     
-    <div class="source-note"><strong>Fuente:</strong> JNE | <strong>Elaboración:</strong> ECData</div>
+    <div class="source-note"><strong>Fuente:</strong> JNE, Mathieu Rojas | <strong>Elaboración:</strong> ECData</div>
 
     <article class="story-text">
         <p>Un párrafo de texto falso. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -116,63 +115,66 @@
         <p style="text-align: center; font-weight: bold; margin-bottom: 30px;">¿Qué carrera es la más repetida en los partidos?</p>
     </article>
 
-    <!-- NUEVO: Donut Carreras -->
+    <!-- Tabla desplazable de Profesiones -->
     <div class="viz-container">
-        <div id="chart-carreras" class="dashboard-centered"></div>
+        <div class="table-responsive">
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Partido</th>
+                        <th>Profesión más común</th>
+                        <th>Candidatos</th>
+                        <th>Porcentaje del total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Acción Popular</td><td>Educación</td><td>547</td><td>9,05</td></tr>
+                    <tr><td>Ahora Nación</td><td>Ingeniería</td><td>611</td><td>10,16</td></tr>
+                    <tr><td>APP</td><td>Educación</td><td>1037</td><td>10,94</td></tr>
+                    <tr><td>Apra</td><td>Ingeniería</td><td>152</td><td>10,08</td></tr>
+                    <tr><td>Avanza País</td><td>Ingeniería</td><td>198</td><td>8,89</td></tr>
+                    <tr><td>Batalla Perú</td><td>Ingeniería</td><td>105</td><td>7,97</td></tr>
+                    <tr><td>Fe en el Perú</td><td>Ingeniería</td><td>49</td><td>7,31</td></tr>
+                    <tr><td>Frente de la Esperanza 2021</td><td>Ingeniería</td><td>132</td><td>9,62</td></tr>
+                    <tr><td>Frepap</td><td>Educación</td><td>63</td><td>5,05</td></tr>
+                    <tr><td>Fuerza Popular</td><td>Ingeniería</td><td>183</td><td>6,55</td></tr>
+                    <tr><td>Juntos por el Perú</td><td>Educación</td><td>221</td><td>11,22</td></tr>
+                    <tr><td>Libertad Popular</td><td>Educación</td><td>170</td><td>10,11</td></tr>
+                    <tr><td>Obras</td><td>Ingeniería</td><td>71</td><td>9,67</td></tr>
+                    <tr><td>País Para Todos</td><td>Educación</td><td>286</td><td>9,77</td></tr>
+                    <tr><td>Partido del Buen Gobierno</td><td>Ingeniería</td><td>77</td><td>7,2</td></tr>
+                    <tr><td>Partido Demócrata Verde</td><td>Educación</td><td>166</td><td>10,37</td></tr>
+                    <tr><td>Partido Morado</td><td>Ingeniería</td><td>77</td><td>13,95</td></tr>
+                    <tr><td>Partido Patriótico del Perú</td><td>Ingeniería</td><td>17</td><td>4,24</td></tr>
+                    <tr><td>Perú Libre</td><td>Educación</td><td>78</td><td>11,62</td></tr>
+                    <tr><td>Perú Moderno</td><td>Educación</td><td>69</td><td>8,52</td></tr>
+                    <tr><td>Perú Primero</td><td>Educación</td><td>742</td><td>9,81</td></tr>
+                    <tr><td>Podemos Perú</td><td>Educación</td><td>654</td><td>8,97</td></tr>
+                    <tr><td>PPC</td><td>Derecho</td><td>139</td><td>9,99</td></tr>
+                    <tr><td>Primero la Gente</td><td>Educación</td><td>11</td><td>4,47</td></tr>
+                    <tr><td>PRIN</td><td>Educación</td><td>124</td><td>10,42</td></tr>
+                    <tr><td>Progresemos</td><td>Ingeniería</td><td>347</td><td>9,7</td></tr>
+                    <tr><td>Pueblo Consciente</td><td>Derecho</td><td>18</td><td>2,3</td></tr>
+                    <tr><td>Renovación Popular</td><td>Ingeniería</td><td>521</td><td>9,81</td></tr>
+                    <tr><td>Salvemos al Perú</td><td>Ingeniería</td><td>44</td><td>9,07</td></tr>
+                    <tr><td>SíCreo</td><td>Ingeniería</td><td>17</td><td>10</td></tr>
+                    <tr><td>Somos Perú</td><td>Educación</td><td>989</td><td>10,75</td></tr>
+                    <tr><td>Todo con el Pueblo</td><td>Educación</td><td>29</td><td>7,75</td></tr>
+                    <tr><td>Un Camino Diferente</td><td>Ingeniería</td><td>22</td><td>12,15</td></tr>
+                    <tr><td>Unidad y Paz</td><td>Derecho</td><td>5</td><td>4,13</td></tr>
+                    <tr><td>Unido Perú</td><td>Ingeniería</td><td>12</td><td>3,8</td></tr>
+                    <tr><td>Venceremos</td><td>Educación</td><td>247</td><td>12,58</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="source-note"><strong>Fuente:</strong> JNE, Mathieu Rojas | <strong>Elaboración:</strong> ECData</div>
     </div>
 
     <article class="story-text">
-        <p>Un párrafo de texto falso. Suspendisse potenti. Nulla facilisi. Praesent congue tristique libero, ullamcorper scelerisque diam. In hac habitasse platea dictumst. Morbi non lacus ut tellus malesuada faucibus. Proin interdum aliquet urna ac scelerisque.</p>
-        <p style="text-align: center; font-weight: bold; margin-top: 40px;">Partidos con mayor edad promedio</p>
+        <p>Un párrafo de texto falso. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Proin consequat, ante ac convallis tincidunt, eros justo varius elit, vitae venenatis ex tellus vehicula diam. Suspendisse potenti.</p>
     </article>
 
-    <!-- NUEVO: Barras Edad Promedio -->
-    <div class="viz-container">
-        <div id="chart-edad-partidos" class="dashboard-centered" style="max-width: 600px; margin: 0 auto;"></div>
-    </div>
-
-    <article class="story-text">
-        <p><strong>Dato:</strong> Unidad y Paz tiene la lista más longeva del país, con 46 años de promedio de edad en sus candidatos. Le siguen el Apra (45 años), el PPC (43 años) y Obras (43 años).</p>
-        <p>Un párrafo de texto falso. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-        <p style="text-align: center; font-weight: bold; margin-top: 40px;">Partidos con mayor cuota joven</p>
-    </article>
-
-    <!-- NUEVO: Barras Cuota Joven -->
-    <div class="viz-container">
-        <div id="chart-jovenes-partidos" class="dashboard-centered" style="max-width: 600px; margin: 0 auto;"></div>
-    </div>
-
-    <article class="story-text">
-        <p><strong>Dato:</strong> El Partido Demócrata Verde concentra el 33.1% de toda su lista nacional en jóvenes menores de 30 años. Le siguen de cerca Batalla Perú (32.1%), Podemos Perú (31.9%) y Perú Moderno (31.9%).</p>
-        <p>Un párrafo de texto falso. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        <p style="text-align: center; font-weight: bold; margin-top: 40px;">Partidos con los candidatos de mayor edad</p>
-    </article>
-
-    <!-- NUEVO: Barras Adultos Mayores -->
-    <div class="viz-container">
-        <div id="chart-mayores-partidos" class="dashboard-centered" style="max-width: 600px; margin: 0 auto;"></div>
-    </div>
-
-    <article class="story-text">
-        <p><strong>Dato:</strong> El APRA es el bastión indiscutible de la tercera edad. Un 24.6% de los candidatos del Apra superan los 61 años de edad (prácticamente 1 de cada 4 postulantes). Detrás de ellos están Unidad y Paz (20.6%) y el PPC (16.3%).</p>
-        <p>Un párrafo de texto falso. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-        <p style="text-align: center; font-weight: bold; margin-top: 40px;">Cuota de jóvenes: ¿Más oportunidades para mujeres?</p>
-    </article>
-
-    <!-- NUEVO: Barras Mujeres Jóvenes -->
-    <div class="viz-container">
-        <div id="chart-mujeres-partidos" class="dashboard-centered" style="max-width: 600px; margin: 0 auto;"></div>
-    </div>
-
-    <article class="story-text">
-        <p><strong>Dato:</strong> Casi la totalidad de partidos llevan más mujeres jóvenes que hombres jóvenes en sus listas. Los partidos que encabezan esta lista son Unido Perú (71.4%), Frente de la Esperanza 2021 (68.7%), Perú Libre (68.4%) y Venceremos (68.1%), dónde casi 7 de cada 10 jóvenes en sus listas son mujeres.</p>
-        
-        <!-- INTRODUCCIÓN HERRAMIENTA INTERACTIVA -->
-        <h2 style="text-align: center; text-transform: uppercase; font-size: 22px; margin-top: 60px;">HERRAMIENTA INTERACTIVA</h2>
-        <p>Un párrafo de texto falso. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
-    </article>
-
-    <!-- NUEVO: DASHBOARD INTERACTIVO -->
+    <!-- DASHBOARD INTERACTIVO REUBICADO -->
     <div class="interactive-dashboard-container">
         <!-- Controles de filtrado -->
         <div class="dashboard-controls">
@@ -216,19 +218,87 @@
                 <div id="interactive-bar-chart"></div>
             </div>
             <div class="panel">
-                <div class="panel-title">Nivel Máximo Educativo</div>
-                <div id="interactive-donut-chart"></div>
+                <div class="panel-title" style="margin-bottom: 5px;">Nivel Máximo Educativo</div>
+                <div style="font-family: 'Georgia', serif; font-size: 13px; color: #666; font-style: italic; text-align: center; margin-bottom: 10px;">* Se consideraron maestrías y doctorados en el conteo de posgrado</div>
+                <div id="interactive-column-chart"></div>
             </div>
         </div>
+        
+        <!-- Nota de fuente del Dashboard interactivo -->
+        <div class="source-note" style="margin-top: 30px; margin-bottom: 0;"><strong>Fuente:</strong> JNE, Mathieu Rojas | <strong>Elaboración:</strong> ECData</div>
     </div>
+
+    <article class="story-text">
+        <p>Un párrafo de texto falso. Suspendisse potenti. Nulla facilisi. Praesent congue tristique libero, ullamcorper scelerisque diam. In hac habitasse platea dictumst. Morbi non lacus ut tellus malesuada faucibus. Proin interdum aliquet urna ac scelerisque.</p>
+        <p style="text-align: center; font-weight: bold; margin-top: 40px;"> <b>Partidos con mayor edad promedio</b></p>
+    </article>
+
+    <!-- Barras Edad Promedio -->
+    <div class="viz-container">
+        <div id="chart-edad-partidos" class="dashboard-centered" style="max-width: 600px; margin: 0 auto;"></div>
+        <div class="source-note" style="margin-top: 20px;"><strong>Fuente:</strong> JNE, Mathieu Rojas | <strong>Elaboración:</strong> ECData</div>
+    </div>
+
+    <article class="story-text">
+        <p><strong>Dato:</strong> Unidad y Paz tiene la lista más longeva del país, con 46 años de promedio de edad en sus candidatos. Le siguen el Apra (45 años), el PPC (43 años) y Obras (43 años).</p>
+        <p>Un párrafo de texto falso. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+        <p style="text-align: center; font-weight: bold; margin-top: 40px;"><b>Partidos con mayor cuota joven</b></p>
+    </article>
+
+    <!-- Barras Cuota Joven -->
+    <div class="viz-container">
+        <div id="chart-jovenes-partidos" class="dashboard-centered" style="max-width: 600px; margin: 0 auto;"></div>
+        <div class="source-note" style="margin-top: 20px;"><strong>Fuente:</strong> JNE, Mathieu Rojas | <strong>Elaboración:</strong> ECData</div>
+    </div>
+
+    <article class="story-text">
+        <p><strong>Dato:</strong> El Partido Demócrata Verde concentra el 33.1% de toda su lista nacional en jóvenes menores de 30 años. Le siguen de cerca Batalla Perú (32.1%), Podemos Perú (31.9%) y Perú Moderno (31.9%).</p>
+        <p>Un párrafo de texto falso. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        <p style="text-align: center; font-weight: bold; margin-top: 40px;"><b>Partidos con los candidatos de mayor edad</b></p>
+    </article>
+
+    <!-- Barras Adultos Mayores -->
+    <div class="viz-container">
+        <div id="chart-mayores-partidos" class="dashboard-centered" style="max-width: 600px; margin: 0 auto;"></div>
+        <div class="source-note" style="margin-top: 20px;"><strong>Fuente:</strong> JNE, Mathieu Rojas | <strong>Elaboración:</strong> ECData</div>
+    </div>
+
+    <article class="story-text">
+        <p><strong>Dato:</strong> El APRA es el bastión indiscutible de la tercera edad. Un 24.6% de los candidatos del Apra superan los 61 años de edad (prácticamente 1 de cada 4 postulantes). Detrás de ellos están Unidad y Paz (20.6%) y el PPC (16.3%).</p>
+        <p>Un párrafo de texto falso. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+        <p style="text-align: center; font-weight: bold; margin-top: 40px;"><b>Cuota de jóvenes: ¿Más oportunidades para mujeres?</b></p>
+    </article>
+
+    <!-- Barras Mujeres Jóvenes -->
+    <div class="viz-container">
+        <div id="chart-mujeres-partidos" class="dashboard-centered" style="max-width: 600px; margin: 0 auto;"></div>
+        <div class="source-note" style="margin-top: 20px;"><strong>Fuente:</strong> JNE, Mathieu Rojas | <strong>Elaboración:</strong> ECData</div>
+    </div>
+
+    <article class="story-text">
+        <p><strong>Dato:</strong> Casi la totalidad de partidos llevan más mujeres jóvenes que hombres jóvenes en sus listas. Los partidos que encabezan esta lista son Unido Perú (71.4%), Frente de la Esperanza 2021 (68.7%), Perú Libre (68.4%) y Venceremos (68.1%), dónde casi 7 de cada 10 jóvenes en sus listas son mujeres.</p>
+    </article>
 
     <footer class="special-credits-black">    
         <h3 class="credits-main-title">Créditos</h3>
         <div class="credit-block">
-            <span class="credit-role">Análisis y Visualización</span>
-            <span class="credit-name">ECData</span>
+            <span class="credit-role">Recolección de datos</span>
+            <span class="credit-name">Mathieu Rojas</span>
+        </div>
+        <div class="credit-block">
+            <span class="credit-role">Análisis de datos</span>
+            <span class="credit-name">Ariana Lira | Fabrizio Monge</span>
+        </div>
+        <div class="credit-block">
+            <span class="credit-role">Diseño y desarrollo</span>
+            <span class="credit-name">Fabrizio Monge</span>
+        </div>
+        <div class="credit-block">
+            <span class="credit-role">Edición general</span>
+            <span class="credit-name">Ariana Lira</span>
         </div>
         <div class="credits-logo-container">
+            <img src="https://fabmonge.github.io/Voto_estrategico_f/fotos/logo-comercio-blanco.png" alt="Logo ECData" onerror="this.style.display='none'">
             <div class="copyright-text">©2026 Empresa Editora El Comercio. Todos los derechos reservados</div>
         </div>
     </footer>

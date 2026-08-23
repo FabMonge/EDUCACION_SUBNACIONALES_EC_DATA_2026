@@ -3,20 +3,15 @@
 // ==========================================
 const CONFIG = {
     colores: {
-        "Secundaria": "#7B241C",             
-        "Superior universitaria": "#2E4053", 
-        "Sin datos": "#7F8C8D",              
-        "Posgrado **": "#117A65",            
-        "Primaria": "#B2BABB",               
-        "Superior técnica": "#D68910",
-        // Colores agregados del CSV del Dashboard
-        "Universitaria": "#2E4053",
-        "Posgrado": "#117A65",
-        "Técnica": "#D68910",
-        // Colores para el Donut de Carreras (Top Level)
-        "Ingeniería": "#2E4053", 
-        "Educación": "#117A65", 
-        "Derecho": "#7B241C"
+        "Posgrado **": "#d65442",            
+        "Posgrado": "#d65442",
+        "Superior universitaria": "#d86a4a", 
+        "Universitaria": "#d86a4a",
+        "Superior técnica": "#d56d73",
+        "Técnica": "#d56d73",
+        "Secundaria": "#df817c",             
+        "Primaria": "#e9aaa1",               
+        "Sin datos": "#7F8C8D" // Gris de contingencia solicitado
     },
     svg: {
         width: 800,
@@ -27,17 +22,29 @@ const CONFIG = {
 };
 
 // ==========================================
+// TOOLTIP GLOBAL
+// ==========================================
+let globalTooltip = d3.select("body").select(".d3-tooltip");
+if (globalTooltip.empty()) {
+    globalTooltip = d3.select("body").append("div")
+        .attr("class", "d3-tooltip")
+        .style("opacity", 0);
+}
+
+function showTooltip(event, content) {
+    globalTooltip.transition().duration(200).style("opacity", 1);
+    globalTooltip.html(content)
+        .style("left", (event.pageX + 15) + "px")
+        .style("top", (event.pageY - 28) + "px");
+}
+
+function hideTooltip() {
+    globalTooltip.transition().duration(500).style("opacity", 0);
+}
+
+// ==========================================
 // 2. DATA
 // ==========================================
-const educacionData = [
-    { label: "Primaria", abs: 444, pct: 4.6 },
-    { label: "Secundaria", abs: 50773, pct: 52.4 },
-    { label: "Superior técnica", abs: 2815, pct: 2.9 },
-    { label: "Superior universitaria", abs: 22042, pct: 22.7 },
-    { label: "Posgrado **", abs: 6428, pct: 6.6 },
-    { label: "Sin datos", abs: 10463, pct: 10.8 }
-];
-
 const edadesData = [
     { cargo: "Gobernador regional", promedio: 54, min: 27, max: 81 },
     { cargo: "Alcalde provincial", promedio: 49, min: 19, max: 86 },
@@ -56,12 +63,6 @@ const educacionColumnasData = [
     { cargo: "Cons. Nacional", "Primaria": 1.6, "Secundaria": 28.0, "Superior técnica": 2.2, "Superior universitaria": 25.4, "Posgrado **": 11.1, "Sin datos": 31.8 },
     { cargo: "Reg. Provincial", "Primaria": 2.9, "Secundaria": 42.2, "Superior técnica": 3.3, "Superior universitaria": 27.2, "Posgrado **": 8.8, "Sin datos": 15.6 },
     { cargo: "Reg. Distrital", "Primaria": 5.9, "Secundaria": 60.7, "Superior técnica": 2.7, "Superior universitaria": 19.1, "Posgrado **": 3.2, "Sin datos": 8.4 }
-];
-
-const carrerasData = [
-    { label: "Ingeniería", abs: 17 },
-    { label: "Educación", abs: 16 },
-    { label: "Derecho", abs: 3 }
 ];
 
 const partidosEdadData = [
@@ -99,109 +100,6 @@ const partidosMujeresData = [
 // ==========================================
 // 3. MOTOR DE RENDERIZADO D3
 // ==========================================
-function renderDonutChart() {
-    try {
-        const { width, height, margin } = CONFIG.svg;
-        const radius = Math.min(width, height) / 2 - margin;
-
-        const container = d3.select("#dashboard-educacion");
-        container.selectAll("*").remove();
-
-        const svg = container.append("svg")
-            .attr("viewBox", `0 0 ${width} ${height}`)
-            .attr("preserveAspectRatio", "xMidYMid meet")
-            .style("max-width", "100%")
-            .style("height", "auto")
-            .append("g")
-            .attr("transform", `translate(${width / 2}, ${height / 2})`);
-
-        const pie = d3.pie()
-            .sort(null) 
-            .value(d => d.pct);
-
-        const dataReady = pie(educacionData);
-
-        const arc = d3.arc()
-            .innerRadius(radius * 0.45) 
-            .outerRadius(radius * 0.85);
-
-        const outerArc = d3.arc()
-            .innerRadius(radius * 0.9)
-            .outerRadius(radius * 0.9);
-
-        svg.selectAll("allSlices")
-            .data(dataReady)
-            .enter()
-            .append("path")
-            .attr("d", arc)
-            .attr("fill", d => CONFIG.colores[d.data.label] || "#333")
-            .attr("stroke", "white")
-            .style("stroke-width", "2px")
-            .style("opacity", 0)
-            .transition()
-            .duration(CONFIG.animationSpeed)
-            .style("opacity", 1);
-
-        svg.selectAll("allPolylines")
-            .data(dataReady)
-            .enter()
-            .append("polyline")
-            .attr("class", "polyline-guide")
-            .attr("points", function(d) {
-                const posA = arc.centroid(d); 
-                const posB = outerArc.centroid(d); 
-                const posC = outerArc.centroid(d); 
-                const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-                posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); 
-                return [posA, posB, posC];
-            })
-            .style("opacity", 0)
-            .transition()
-            .delay(CONFIG.animationSpeed / 2)
-            .duration(CONFIG.animationSpeed)
-            .style("opacity", 1);
-
-        const labelsGroup = svg.selectAll("allLabels")
-            .data(dataReady)
-            .enter()
-            .append("g")
-            .attr("transform", function(d) {
-                const pos = outerArc.centroid(d);
-                const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-                pos[0] = radius * 1.02 * (midangle < Math.PI ? 1 : -1);
-                return `translate(${pos})`;
-            })
-            .style("text-anchor", function(d) {
-                const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-                return (midangle < Math.PI ? "start" : "end");
-            })
-            .style("opacity", 0);
-
-        labelsGroup.append("text")
-            .attr("class", "label-category")
-            .attr("y", -10)
-            .text(d => d.data.label);
-
-        labelsGroup.append("text")
-            .attr("y", 8)
-            .append("tspan")
-            .attr("class", "label-percentage")
-            .attr("fill", d => CONFIG.colores[d.data.label])
-            .text(d => `${d.data.pct}% `)
-            .append("tspan")
-            .attr("class", "label-absolute")
-            .text(d => `(${d.data.abs.toLocaleString('es-PE')} casos)`);
-
-        labelsGroup.transition()
-            .delay(CONFIG.animationSpeed / 2)
-            .duration(CONFIG.animationSpeed)
-            .style("opacity", 1);
-
-    } catch (error) {
-        console.error("Error al renderizar la visualización D3:", error);
-        document.getElementById("chart-error-message").style.display = "block";
-    }
-}
 
 function renderAgeCharts() {
     const width = 400, height = 300;
@@ -234,14 +132,22 @@ function renderAgeCharts() {
         .attr("x", marginBar.left)
         .attr("height", yScale.bandwidth())
         .attr("width", d => xScaleBar(d.promedio) - marginBar.left)
-        .attr("fill", "#B2BABB");
+        .attr("fill", "#e9aaa1")
+        .on("mouseover", function(event, d) {
+            d3.select(this).attr("opacity", 0.8);
+            showTooltip(event, `<b>${d.cargo}</b><br>Promedio: ${d.promedio}`);
+        })
+        .on("mouseout", function() {
+            d3.select(this).attr("opacity", 1);
+            hideTooltip();
+        });
 
     svgBar.selectAll(".label-promedio")
         .data(edadesData)
         .enter().append("text")
         .attr("class", "label-promedio")
         .attr("y", d => yScale(d.cargo) + yScale.bandwidth() / 2)
-        .attr("x", d => xScaleBar(d.promedio) + 5)
+        .attr("x", d => xScaleBar(d.promedio) + 12)
         .attr("dominant-baseline", "middle")
         .style("font-family", "Arial").style("font-weight", "bold").style("font-size", "12px")
         .text(d => d.promedio);
@@ -276,13 +182,23 @@ function renderAgeCharts() {
         .attr("class", "dumbbell-circle-min")
         .attr("cx", d => xScaleDumbbell(d.min))
         .attr("cy", 0)
-        .attr("r", 6);
+        .attr("r", 6)
+        .style("fill", "#df817c")
+        .on("mouseover", function(event, d) {
+            showTooltip(event, `<b>Edad mínima:</b> ${d.min}`);
+        })
+        .on("mouseout", hideTooltip);
 
     groups.append("circle")
         .attr("class", "dumbbell-circle-max")
         .attr("cx", d => xScaleDumbbell(d.max))
         .attr("cy", 0)
-        .attr("r", 6);
+        .attr("r", 6)
+        .style("fill", "#d65442")
+        .on("mouseover", function(event, d) {
+            showTooltip(event, `<b>Edad máxima:</b> ${d.max}`);
+        })
+        .on("mouseout", hideTooltip);
 
     groups.append("text")
         .attr("class", "dumbbell-text")
@@ -321,7 +237,7 @@ function renderStackedColumns() {
 
     const legendContainer = document.getElementById("unified-legend");
     const legendKeys = Object.keys(CONFIG.colores).filter(key => 
-        !["Ingeniería", "Educación", "Derecho", "Universitaria", "Posgrado", "Técnica"].includes(key)
+        !["Universitaria", "Posgrado", "Técnica"].includes(key)
     ); 
     
     legendContainer.innerHTML = legendKeys.map(key => 
@@ -332,9 +248,7 @@ function renderStackedColumns() {
     ).join("");
 
     const gruposCargos = educacionColumnasData.map(d => d.cargo);
-    const categorias = Object.keys(CONFIG.colores).filter(key => 
-        !["Ingeniería", "Educación", "Derecho", "Universitaria", "Posgrado", "Técnica"].includes(key)
-    );
+    const categorias = legendKeys;
 
     const stackedData = d3.stack()
         .keys(categorias)
@@ -380,76 +294,20 @@ function renderStackedColumns() {
         .attr("y", d => yScale(d[1])) 
         .attr("height", d => yScale(d[0]) - yScale(d[1])) 
         .attr("width", xScale.bandwidth())
+        .on("mouseover", function(event, d) {
+            d3.select(this).attr("opacity", 0.8);
+            const parentKey = d3.select(this.parentNode).datum().key;
+            const percentage = (d[1] - d[0]).toFixed(1);
+            showTooltip(event, `<b>${d.data.cargo}</b><br>${parentKey}: ${percentage}%`);
+        })
+        .on("mouseout", function() {
+            d3.select(this).attr("opacity", 1);
+            hideTooltip();
+        })
         .attr("opacity", 0)
         .transition()
         .duration(CONFIG.animationSpeed || 1000)
         .attr("opacity", 1);
-}
-
-function renderCarrerasDonut() {
-    const width = 600, height = 400, margin = 40;
-    const radius = Math.min(width, height) / 2 - margin;
-
-    const svg = d3.select("#chart-carreras").append("svg")
-        .attr("viewBox", `0 0 ${width} ${height}`)
-        .style("max-width", "100%")
-        .style("height", "auto")
-        .append("g")
-        .attr("transform", `translate(${width / 2}, ${height / 2})`);
-
-    const pie = d3.pie().sort(null).value(d => d.abs);
-    const dataReady = pie(carrerasData);
-    const arc = d3.arc().innerRadius(radius * 0.5).outerRadius(radius * 0.8);
-    const outerArc = d3.arc().innerRadius(radius * 0.9).outerRadius(radius * 0.9);
-
-    svg.selectAll("allSlices")
-        .data(dataReady)
-        .enter()
-        .append("path")
-        .attr("d", arc)
-        .attr("fill", d => CONFIG.colores[d.data.label] || "#333")
-        .attr("stroke", "white")
-        .style("stroke-width", "2px");
-
-    svg.selectAll("allPolylines")
-        .data(dataReady)
-        .enter()
-        .append("polyline")
-        .attr("class", "polyline-guide")
-        .attr("points", function(d) {
-            const posA = arc.centroid(d);
-            const posB = outerArc.centroid(d);
-            const posC = outerArc.centroid(d);
-            const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-            posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1);
-            return [posA, posB, posC];
-        });
-
-    const labelsGroup = svg.selectAll("allLabels")
-        .data(dataReady)
-        .enter()
-        .append("g")
-        .attr("transform", function(d) {
-            const pos = outerArc.centroid(d);
-            const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-            pos[0] = radius * 1.02 * (midangle < Math.PI ? 1 : -1);
-            return `translate(${pos})`;
-        })
-        .style("text-anchor", function(d) {
-            const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-            return (midangle < Math.PI ? "start" : "end");
-        });
-
-    labelsGroup.append("text")
-        .attr("class", "label-category")
-        .attr("y", -5)
-        .text(d => d.data.label);
-
-    labelsGroup.append("text")
-        .attr("y", 12)
-        .attr("class", "label-percentage")
-        .attr("fill", d => CONFIG.colores[d.data.label])
-        .text(d => `${d.data.abs} partidos`);
 }
 
 function renderTop5BarChart(containerId, data, valueKey, formatLabelFn, tooltipHTMLFn, barColor) {
@@ -479,10 +337,6 @@ function renderTop5BarChart(containerId, data, valueKey, formatLabelFn, tooltipH
         .style("font-weight", "bold")
         .style("fill", "#333");
 
-    const tooltip = d3.select("body").append("div")
-        .attr("class", "d3-tooltip")
-        .style("opacity", 0);
-
     svg.selectAll("rect")
         .data(data)
         .enter().append("rect")
@@ -493,14 +347,11 @@ function renderTop5BarChart(containerId, data, valueKey, formatLabelFn, tooltipH
         .attr("fill", barColor)
         .on("mouseover", function(event, d) {
             d3.select(this).attr("opacity", 0.8);
-            tooltip.transition().duration(200).style("opacity", .9);
-            tooltip.html(tooltipHTMLFn(d))
-                .style("left", (event.pageX + 15) + "px")
-                .style("top", (event.pageY - 28) + "px");
+            showTooltip(event, tooltipHTMLFn(d));
         })
         .on("mouseout", function() {
             d3.select(this).attr("opacity", 1);
-            tooltip.transition().duration(500).style("opacity", 0);
+            hideTooltip();
         });
 
     svg.selectAll(".bar-label")
@@ -508,13 +359,118 @@ function renderTop5BarChart(containerId, data, valueKey, formatLabelFn, tooltipH
         .enter().append("text")
         .attr("class", "bar-label")
         .attr("y", d => yScale(d.partido) + yScale.bandwidth() / 2)
-        .attr("x", d => xScale(d[valueKey]) + 5)
+        .attr("x", d => xScale(d[valueKey]) + 12)
         .attr("dominant-baseline", "middle")
         .style("font-family", "Arial")
         .style("font-weight", "bold")
         .style("font-size", "13px")
         .style("fill", barColor)
         .text(d => formatLabelFn(d[valueKey]));
+}
+
+// ==========================================
+// NUEVO GRÁFICO: BARRAS VERTICALES TIPO FLOURISH
+// ==========================================
+function renderInteractiveColumnChart(data) {
+    const container = d3.select("#interactive-column-chart");
+    container.selectAll("*").remove();
+
+    if (!data || data.length === 0) {
+        container.append("p").text("Sin datos para este nivel.").style("text-align", "center").style("font-family", "Arial").style("color", "#666");
+        return;
+    }
+
+    const width = 450, height = 360;
+    const margin = { top: 30, right: 10, bottom: 60, left: 40 };
+
+    const svg = container.append("svg")
+        .attr("viewBox", `0 0 ${width} ${height}`)
+        .style("width", "100%")
+        .style("height", "auto");
+
+    // Orden corregido según los valores exactos del CSV de Nivel Máximo
+    const order = ["Sin datos", "Primaria", "Secundaria", "Técnica", "Universitaria", "Posgrado"];
+    
+    // Filtramos y ordenamos la data
+    const sortedData = [...data].sort((a, b) => order.indexOf(a['Nivel Máximo']) - order.indexOf(b['Nivel Máximo']));
+
+    const xScale = d3.scaleBand()
+        .domain(sortedData.map(d => d['Nivel Máximo']))
+        .range([margin.left, width - margin.right])
+        .padding(0.15);
+
+    const yScale = d3.scaleLinear()
+        .domain([0, d3.max(sortedData, d => d['N Candidatos']) * 1.2])
+        .range([height - margin.bottom, margin.top]);
+
+    // Líneas de cuadrícula horizontales (Grid) y Eje Y
+    svg.append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(yScale).ticks(5).tickSize(-(width - margin.left - margin.right)))
+        .call(g => g.select(".domain").remove())
+        .call(g => g.selectAll(".tick line").attr("stroke", "#eaeaea"))
+        .selectAll("text")
+        .style("font-family", "Arial")
+        .style("font-size", "11px")
+        .style("fill", "#888")
+        .text(d => d.toLocaleString('es-PE'));
+
+    // Eje X con separación de palabras largas
+    const xAxis = svg.append("g")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(xScale).tickSizeOuter(0));
+        
+    xAxis.select(".domain").attr("stroke", "#eaeaea");
+    
+    xAxis.selectAll("text")
+        .style("font-family", "Arial")
+        .style("font-size", "12px")
+        .style("fill", "#666")
+        .each(function(d) {
+            const textNode = d3.select(this);
+            const words = d.split(" ");
+            textNode.text("");
+            words.forEach((word, i) => {
+                textNode.append("tspan")
+                    .text(word)
+                    .attr("x", 0)
+                    .attr("y", 12)
+                    .attr("dy", `${i * 1.1}em`);
+            });
+        });
+
+    // Barras
+    svg.selectAll("rect.bar")
+        .data(sortedData)
+        .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", d => xScale(d['Nivel Máximo']))
+        .attr("y", d => yScale(d['N Candidatos']))
+        .attr("width", xScale.bandwidth())
+        .attr("height", d => height - margin.bottom - yScale(d['N Candidatos']))
+        .attr("fill", d => CONFIG.colores[d['Nivel Máximo']] || "#d65442")
+        .on("mouseover", function(event, d) {
+            d3.select(this).attr("opacity", 0.8);
+            showTooltip(event, `<b>${d['Nivel Máximo']}</b><br>Candidatos: ${d['N Candidatos']}<br>Porcentaje: ${d['% del total'].toFixed(1)}%`);
+        })
+        .on("mouseout", function() {
+            d3.select(this).attr("opacity", 1);
+            hideTooltip();
+        });
+
+    // Etiquetas numéricas encima de cada barra
+    svg.selectAll("text.bar-value")
+        .data(sortedData)
+        .enter().append("text")
+        .attr("class", "bar-value")
+        .attr("x", d => xScale(d['Nivel Máximo']) + xScale.bandwidth() / 2)
+        .attr("y", d => yScale(d['N Candidatos']) - 8)
+        .attr("text-anchor", "middle")
+        .style("font-family", "Arial")
+        .style("font-size", "12px")
+        .style("font-weight", "bold")
+        .style("fill", "#333")
+        .text(d => d['N Candidatos'].toLocaleString('es-PE'));
 }
 
 // ==========================================
@@ -526,46 +482,58 @@ function initInteractiveDashboard() {
         d3.csv("PARTIDOS_NIVEL_MAXIMO_DASHBOARD.csv"),
         d3.csv("CARRERAS_PARTIDOS_DASHBOARD.csv")
     ]).then(function(files) {
+        
+        // Función ultra-robusta para leer las columnas (ignora caracteres extraños de Excel)
+        const getVal = (row, colName) => {
+            const key = Object.keys(row).find(k => k.includes(colName));
+            return key ? row[key] : null;
+        };
+
         const rawEdades = files[0];
         const rawNivel = files[1];
         const rawCarreras = files[2];
         
-        // Parsear strings a números
-        rawEdades.forEach(d => {
-            d['Edad Promedio'] = +d['Edad Promedio'];
-            d['Edad Mínima'] = +d['Edad Mínima'];
-            d['Edad Máxima'] = +d['Edad Máxima'];
-        });
-        rawNivel.forEach(d => {
-            d['N Candidatos'] = +d['N Candidatos'];
-            d['% del total'] = +d['% del total'];
-        });
-        rawCarreras.forEach(d => {
-            d['N Candidatos'] = +d['N Candidatos'];
-            d['% del total'] = +d['% del total'];
-        });
-
-        // Llenar el input tipo dropdown
-        const parties = Array.from(new Set(rawEdades.map(d => d.Partido))).sort();
+        // Extraemos los partidos reales del CSV y los ordenamos
+        const parties = Array.from(new Set(rawEdades.map(d => getVal(d, "Partido")).filter(Boolean))).sort();
+        
+        // Llenamos el Datalist oculto (el menú desplegable)
         const dataList = d3.select("#party-list");
+        dataList.selectAll("*").remove(); 
         parties.forEach(p => {
             dataList.append("option").attr("value", p);
         });
 
         // Estado inicial
         let currentState = {
-            partido: parties.includes("APP") ? "APP" : parties[0],
+            partido: parties.includes("APP") ? "APP" : (parties[0] || ""),
             nivel: "GENERAL"
         };
 
-        d3.select("#party-selector").property("value", currentState.partido);
+        const selector = d3.select("#party-selector");
+        selector.property("value", currentState.partido);
 
-        // Listeners
-        d3.select("#party-selector").on("change", function() {
-            const val = this.value;
-            if(parties.includes(val)) {
-                currentState.partido = val;
+        // TRUCO DE USABILIDAD: Al hacer clic, se borra el texto para que aparezca toda la lista junta
+        selector.on("focus", function() {
+            this.value = ""; 
+        });
+
+        // Cuando el usuario escribe o selecciona algo en la lista
+        selector.on("input", function() {
+            const typedVal = this.value.trim().toLowerCase();
+            const matchedParty = parties.find(p => p.toLowerCase() === typedVal);
+            
+            // Solo actualizamos los gráficos si la palabra coincide con un partido real
+            if(matchedParty) {
+                currentState.partido = matchedParty;
+                selector.property("value", matchedParty); // Autocompleta bonito
                 updateDashboard();
+            }
+        });
+
+        // Para salir del input si el usuario hizo clic pero no quiso cambiar nada
+        selector.on("blur", function() {
+            if (this.value === "") {
+                this.value = currentState.partido;
             }
         });
 
@@ -576,29 +544,37 @@ function initInteractiveDashboard() {
             updateDashboard();
         });
 
-        // Motor de actualización
         function updateDashboard() {
-            const edadData = rawEdades.find(d => d.Partido === currentState.partido && d['Nivel de Gobierno'] === currentState.nivel);
-            const nivelData = rawNivel.filter(d => d.Partido === currentState.partido && d['Nivel de Gobierno'] === currentState.nivel);
+            const edadData = rawEdades.find(d => getVal(d, "Partido") === currentState.partido && getVal(d, "Nivel de Gobierno") === currentState.nivel);
+            const nivelData = rawNivel.filter(d => getVal(d, "Partido") === currentState.partido && getVal(d, "Nivel de Gobierno") === currentState.nivel);
             
-            let carreraData = rawCarreras.filter(d => d.Partido === currentState.partido && d['Nivel de Gobierno'] === currentState.nivel);
-            // Ordenar por más candidatos y sacar top 7
-            carreraData = carreraData.sort((a, b) => b['N Candidatos'] - a['N Candidatos']).slice(0, 7);
+            let carreraData = rawCarreras.filter(d => getVal(d, "Partido") === currentState.partido && getVal(d, "Nivel de Gobierno") === currentState.nivel);
+            
+            // Limpiar y parsear números antes de renderizar
+            carreraData.forEach(d => { d['N Candidatos'] = +getVal(d, 'N Candidatos'); });
+            nivelData.forEach(d => { 
+                d['N Candidatos'] = +getVal(d, 'N Candidatos'); 
+                d['% del total'] = +getVal(d, '% del total'); 
+                d['Nivel Máximo'] = getVal(d, 'Nivel Máximo');
+            });
 
-            // Actualizar Tarjetas KPI
+            carreraData = carreraData.sort((a, b) => b['N Candidatos'] - a['N Candidatos']).slice(0, 7);
+            
+            // Renombrar la columna de profesiones para que el gráfico la entienda
+            carreraData.forEach(d => { d['Profesion Clasificada'] = getVal(d, 'Profesion Clasificada'); });
+
             if(edadData) {
-                d3.select("#kpi-edad-promedio").text(edadData['Edad Promedio'].toFixed(1));
-                d3.select("#kpi-edad-maxima").text(edadData['Edad Máxima']);
-                d3.select("#kpi-edad-minima").text(edadData['Edad Mínima']);
+                d3.select("#kpi-edad-promedio").text((+getVal(edadData, 'Edad Promedio')).toFixed(1));
+                d3.select("#kpi-edad-maxima").text(getVal(edadData, 'Edad Máxima'));
+                d3.select("#kpi-edad-minima").text(getVal(edadData, 'Edad Mínima'));
             } else {
                 d3.select("#kpi-edad-promedio").text("-");
                 d3.select("#kpi-edad-maxima").text("-");
                 d3.select("#kpi-edad-minima").text("-");
             }
 
-            // Actualizar Gráficos
             renderInteractiveBarChart(carreraData);
-            renderInteractiveDonutChart(nivelData);
+            renderInteractiveColumnChart(nivelData);
         }
 
         updateDashboard();
@@ -607,7 +583,6 @@ function initInteractiveDashboard() {
     });
 }
 
-// Renderizadores de Gráficos Internos del Dashboard
 function renderInteractiveBarChart(data) {
     const container = d3.select("#interactive-bar-chart");
     container.selectAll("*").remove();
@@ -617,8 +592,8 @@ function renderInteractiveBarChart(data) {
         return;
     }
 
-    const width = 500, height = 300;
-    const margin = { top: 20, right: 40, bottom: 20, left: 200 }; // Espacio amplio para profesiones largas
+    const width = 450, height = 360;
+    const margin = { top: 20, right: 5, bottom: 20, left: 120 };
     
     const svg = container.append("svg")
         .attr("viewBox", `0 0 ${width} ${height}`)
@@ -650,112 +625,42 @@ function renderInteractiveBarChart(data) {
         .attr("x", margin.left)
         .attr("height", yScale.bandwidth())
         .attr("width", d => xScale(d['N Candidatos']) - margin.left)
-        .attr("fill", "#2E4053");
+        .attr("fill", "#d65442") 
+        .on("mouseover", function(event, d) {
+            d3.select(this).attr("opacity", 0.8);
+            showTooltip(event, `<b>${d['Profesion Clasificada']}</b><br>Candidatos: ${d['N Candidatos']}`);
+        })
+        .on("mouseout", function() {
+            d3.select(this).attr("opacity", 1);
+            hideTooltip();
+        });
 
     svg.selectAll(".bar-label")
         .data(data)
         .enter().append("text")
         .attr("class", "bar-label")
         .attr("y", d => yScale(d['Profesion Clasificada']) + yScale.bandwidth() / 2)
-        .attr("x", d => xScale(d['N Candidatos']) + 5)
+        .attr("x", d => xScale(d['N Candidatos']) + 12)
         .attr("dominant-baseline", "middle")
         .style("font-family", "Arial")
         .style("font-weight", "bold")
         .style("font-size", "11px")
-        .style("fill", "#2E4053")
+        .style("fill", "#d65442") 
         .text(d => d['N Candidatos']);
-}
-
-function renderInteractiveDonutChart(data) {
-    const container = d3.select("#interactive-donut-chart");
-    container.selectAll("*").remove();
-
-    if (!data || data.length === 0) {
-        container.append("p").text("Sin datos para este nivel.").style("text-align", "center").style("font-family", "Arial").style("color", "#666");
-        return;
-    }
-
-    const width = 450, height = 300, margin = 40;
-    const radius = Math.min(width, height) / 2 - margin;
-
-    const svg = container.append("svg")
-        .attr("viewBox", `0 0 ${width} ${height}`)
-        .style("width", "100%")
-        .style("height", "auto")
-        .append("g")
-        .attr("transform", `translate(${width / 2}, ${height / 2})`);
-
-    const pie = d3.pie().sort(null).value(d => d['N Candidatos']);
-    const dataReady = pie(data);
-
-    const arc = d3.arc().innerRadius(radius * 0.45).outerRadius(radius * 0.85);
-    const outerArc = d3.arc().innerRadius(radius * 0.9).outerRadius(radius * 0.9);
-
-    svg.selectAll("allSlices")
-        .data(dataReady)
-        .enter()
-        .append("path")
-        .attr("d", arc)
-        .attr("fill", d => CONFIG.colores[d.data['Nivel Máximo']] || "#333")
-        .attr("stroke", "white")
-        .style("stroke-width", "2px");
-
-    svg.selectAll("allPolylines")
-        .data(dataReady)
-        .enter()
-        .append("polyline")
-        .attr("class", "polyline-guide")
-        .attr("points", function(d) {
-            const posA = arc.centroid(d); 
-            const posB = outerArc.centroid(d); 
-            const posC = outerArc.centroid(d); 
-            const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-            posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); 
-            return [posA, posB, posC];
-        });
-
-    const labelsGroup = svg.selectAll("allLabels")
-        .data(dataReady)
-        .enter()
-        .append("g")
-        .attr("transform", function(d) {
-            const pos = outerArc.centroid(d);
-            const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-            pos[0] = radius * 1.05 * (midangle < Math.PI ? 1 : -1);
-            return `translate(${pos})`;
-        })
-        .style("text-anchor", function(d) {
-            const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-            return (midangle < Math.PI ? "start" : "end");
-        });
-
-    labelsGroup.append("text")
-        .attr("class", "label-category")
-        .attr("y", -5)
-        .style("font-size", "11px")
-        .text(d => d.data['Nivel Máximo']);
-
-    labelsGroup.append("text")
-        .attr("y", 10)
-        .attr("class", "label-percentage")
-        .attr("fill", d => CONFIG.colores[d.data['Nivel Máximo']] || "#333")
-        .style("font-size", "12px")
-        .text(d => `${d.data['% del total'].toFixed(1)}%`);
 }
 
 // Inicializador principal
 document.addEventListener("DOMContentLoaded", () => {
-    // Gráficos Estáticos
-    renderDonutChart(); 
+    // Gráficos Estáticos restantes
     renderAgeCharts(); 
     renderStackedColumns();
-    renderCarrerasDonut();
     
-    renderTop5BarChart("#chart-edad-partidos", partidosEdadData, "promedio", (val) => val.toFixed(1), (d) => `<b>Edad Máxima:</b> ${d.max} años`, "#7B241C");
-    renderTop5BarChart("#chart-jovenes-partidos", partidosJovenesData, "pct", (val) => val + "%", (d) => `<b>Jóvenes (18-29):</b> ${d.jovenes}`, "#117A65");
-    renderTop5BarChart("#chart-mayores-partidos", partidosMayoresData, "pct", (val) => val + "%", (d) => `<b>Adultos Mayores (61+):</b> ${d.mayores}`, "#2E4053");
-    renderTop5BarChart("#chart-mujeres-partidos", partidosMujeresData, "pct", (val) => val + "%", (d) => `<b>Mujeres jóvenes:</b> ${d.mujeres}<br><b>Total jóvenes en el partido:</b> ${d.totalJovenes}`, "#D68910");
+    // Top 5 con la nueva paleta de colores
+    renderTop5BarChart("#chart-edad-partidos", partidosEdadData, "promedio", (val) => val.toFixed(1), (d) => `<b>Edad Máxima:</b> ${d.max} años`, "#d65442");
+    renderTop5BarChart("#chart-jovenes-partidos", partidosJovenesData, "pct", (val) => val + "%", (d) => `<b>Jóvenes (18-29):</b> ${d.jovenes}`, "#d86a4a");
+    renderTop5BarChart("#chart-mayores-partidos", partidosMayoresData, "pct", (val) => val + "%", (d) => `<b>Adultos Mayores (61+):</b> ${d.mayores}`, "#d56d73");
+    renderTop5BarChart("#chart-mujeres-partidos", partidosMujeresData, "pct", (val) => val + "%", (d) => `<b>Mujeres jóvenes:</b> ${d.mujeres}<br><b>Total jóvenes en el partido:</b> ${d.totalJovenes}`, "#df817c");
 
-    // Gráficos Interactivos desde CSV local (Requiere Live Server)
+    // Gráficos Interactivos desde CSV local
     initInteractiveDashboard();
 });

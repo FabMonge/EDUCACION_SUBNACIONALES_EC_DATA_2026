@@ -6,9 +6,11 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
 /* =========================================
    2. HEADER Y EDITORIAL (Estilo Sobrio/Político)
    ========================================= */
+.kicker { margin-bottom: 25px; display: flex; justify-content: center; align-items: center; }
+.kicker img { height: 55px; width: auto; display: block; max-width: 100%; }
+
 .mega-nota-container { width: 100%; position: relative; overflow: hidden; background-color: #111; }
 .special-header { max-width: 900px; margin: 60px auto 40px auto; padding: 0 20px; text-align: center; }
-.kicker { margin-bottom: 25px; display: flex; justify-content: center; align-items: center; }
 .headline { font-family: 'Georgia', 'Times New Roman', serif; font-size: 56px; font-weight: 900; color: #111; line-height: 1.1; margin-top: 0; margin-bottom: 15px; letter-spacing: -1px; }
 .subheadline { font-family: 'Georgia', 'Times New Roman', serif; font-size: 24px; font-weight: 400; color: #444; line-height: 1.4; margin-top: 0; margin-bottom: 30px; }
 .header-divider { width: 50px; height: 1px; background-color: #333; margin: 30px auto 15px auto; }
@@ -26,7 +28,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;
 }
 .metric-card {
-    background: #f9f9f9; border-top: 4px solid #7B241C; padding: 25px 15px;
+    background: #f9f9f9; border-top: 4px solid #d65442; padding: 25px 15px;
     text-align: center; border-radius: 0 0 6px 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 .metric-title { font-size: 14px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
@@ -43,7 +45,6 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; margin-bottom: 20px;
 }
 
-#dashboard-educacion svg,
 #chart-carreras svg {
     max-width: 650px;
     width: 100%;
@@ -71,9 +72,56 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
 .copyright-text { font-size: 11px; color: #777; margin-top: 30px; }
 
 /* =========================================
+   6. TABLA DESPLAZABLE (NUEVO)
+   ========================================= */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-radius: 6px;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    background: #fff;
+    min-width: 600px;
+}
+
+.custom-table th {
+    background-color: #d65442;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 12px 15px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.custom-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eaeaea;
+    color: #333;
+}
+
+.custom-table tbody tr:nth-of-type(even) {
+    background-color: #fcfcfc;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f4f4f4;
+}
+
+/* =========================================
    7. NUEVAS GRILLAS (EDADES Y SMALL MULTIPLES)
    ========================================= */
 .age-charts-grid {
+    max-width: 1000px !important;
+    height:auto !important;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 30px;
@@ -99,8 +147,6 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
 }
 
 .dumbbell-line { stroke: #ccc; stroke-width: 2px; }
-.dumbbell-circle-min { fill: #2E4053; } 
-.dumbbell-circle-max { fill: #7B241C; } 
 .dumbbell-text { font-family: 'Arial', sans-serif; font-size: 11px; font-weight: bold; fill: #333; }
 
 .large-viz-container {
@@ -181,12 +227,12 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
    9. HERRAMIENTA INTERACTIVA (NUEVO)
    ========================================= */
 .interactive-dashboard-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto 50px auto;
     padding: 30px;
     background: #fdfdfd;
     border: 1px solid #eaeaea;
-    border-top: 4px solid #2E4053;
+    border-top: 4px solid #d65442;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
@@ -228,26 +274,26 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
 }
 
 .custom-input-select:focus {
-    border-color: #2E4053;
+    border-color: #d65442;
 }
 
 .toggle-group {
     display: flex;
-    border: 2px solid #2E4053;
+    border: 2px solid #d65442;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .toggle-btn {
     background: #fff;
-    color: #2E4053;
+    color: #d65442;
     border: none;
     padding: 10px 20px;
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s;
-    border-right: 1px solid #2E4053;
+    border-right: 1px solid #d65442;
 }
 
 .toggle-btn:last-child {
@@ -255,11 +301,11 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
 }
 
 .toggle-btn:hover {
-    background: #f0f0f0;
+    background: #fdf2f0;
 }
 
 .toggle-btn.active {
-    background: #2E4053;
+    background: #d65442;
     color: #fff;
 }
 
@@ -270,11 +316,17 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
 .interactive-charts-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 10px;
 }
 
+/* Ejemplo: Control de anchos independientes */
+#chart-edad-partidos svg { max-width: 700px; }
+#chart-jovenes-partidos svg { max-width: 650px; }
+#chart-mayores-partidos svg { max-width: 800px; } /* Más grande */
+#interactive-bar-chart svg { max-width: 100%; } /* Ocupa todo el panel */
+
 /* =========================================
-   6. RESPONSIVE (MOBILE FIRST REAL)
+   10. RESPONSIVE (MOBILE FIRST REAL)
    ========================================= */
 @media (max-width: 768px) {
     .headline { font-size: 38px; }
@@ -299,7 +351,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     }
     .toggle-btn {
         border-right: none;
-        border-bottom: 1px solid #2E4053;
+        border-bottom: 1px solid #d65442;
     }
     .toggle-btn:last-child {
         border-bottom: none;
