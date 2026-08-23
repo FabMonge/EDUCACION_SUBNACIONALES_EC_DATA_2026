@@ -478,9 +478,9 @@ function renderInteractiveColumnChart(data) {
 // ==========================================
 function initInteractiveDashboard() {
     Promise.all([
-        d3.csv("dashboard_edades_TITULARES.csv"),
-        d3.csv("PARTIDOS_NIVEL_MAXIMO_DASHBOARD.csv"),
-        d3.csv("CARRERAS_PARTIDOS_DASHBOARD.csv")
+        d3.csv("https://fabmonge.github.io/EDUCACION_SUBNACIONALES_EC_DATA_2026/dashboard_edades_TITULARES.csv"),
+        d3.csv("https://fabmonge.github.io/EDUCACION_SUBNACIONALES_EC_DATA_2026/PARTIDOS_NIVEL_MAXIMO_DASHBOARD.csv"),
+        d3.csv("https://fabmonge.github.io/EDUCACION_SUBNACIONALES_EC_DATA_2026/CARRERAS_PARTIDOS_DASHBOARD.csv")
     ]).then(function(files) {
         
         // Función ultra-robusta para leer las columnas (ignora caracteres extraños de Excel)
