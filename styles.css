@@ -6,7 +6,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
 /* =========================================
    2. HEADER Y EDITORIAL (Estilo Sobrio/Político)
    ========================================= */
-.kicker { margin-bottom: 25px; display: flex; justify-content: center; align-items: center; }
+.kicker { margin-bottom: 25px !important; display: flex !important; justify-content: center !important; align-items: center !important; }
 .kicker img { height: 55px; width: auto; display: block; max-width: 100%; }
 /* =========================================
    2. IMAGEN ABRIDORA (HERO IMAGE)
@@ -23,7 +23,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     height: 100%;
     display: block;
 }
-.special-header { max-width: 900px; margin: 60px auto 40px auto; padding: 0 20px; text-align: center; }
+.special-header { max-width: 900px !important; margin: 60px auto 40px auto !important; padding: 0 20px !important; text-align: center !important; }
 .headline { font-family: 'Georgia', 'Times New Roman', serif !important;
     font-size: 56px; font-weight: 900 !important;
     color: #111 !important;
