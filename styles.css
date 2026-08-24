@@ -6,70 +6,72 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
 /* =========================================
    2. HEADER Y EDITORIAL (Estilo Sobrio/Político)
    ========================================= */
-.kicker { margin-bottom: 25px !important; display: flex !important; justify-content: center !important; align-items: center !important; }
-.kicker img { height: 55px; width: auto; display: block; max-width: 100%; }
+#ecdata-especial .kicker { margin-bottom: 25px !important; display: flex !important; justify-content: center !important; align-items: center !important; }
+#ecdata-especial .kicker img { height: 55px; width: auto; display: block; max-width: 100%; }
+
 /* =========================================
    2. IMAGEN ABRIDORA (HERO IMAGE)
    ========================================= */
-.mega-nota-container {
+#ecdata-especial .mega-nota-container {
     width: 100%;
     position: relative;
     overflow: hidden;
     background-color: #111;
 }
 
-.mega-nota-img {
+#ecdata-especial .mega-nota-img {
     width: 100%;
     height: 100%;
     display: block;
 }
-.special-header { max-width: 900px !important; margin: 60px auto 40px auto !important; padding: 0 20px !important; text-align: center !important; }
-.headline { font-family: 'Georgia', 'Times New Roman', serif !important;
+
+#ecdata-especial .special-header { max-width: 900px !important; margin: 60px auto 40px auto !important; padding: 0 20px !important; text-align: center !important; }
+#ecdata-especial .headline { font-family: 'Georgia', 'Times New Roman', serif !important;
     font-size: 56px; font-weight: 900 !important;
     color: #111 !important;
     line-height: 1.1 !important;
     margin-top: 0 !important;
     margin-bottom: 15px !important;
     letter-spacing: -1px !important; }
-.subheadline { font-family: 'Georgia', 'Times New Roman', serif !important;
+#ecdata-especial .subheadline { font-family: 'Georgia', 'Times New Roman', serif !important;
     font-size: 24px !important;
     font-weight: 400 !important;
     color: #444; line-height: 1.4 !important;
     margin-top: 0 !important;
     margin-bottom: 30px !important; }
-.header-divider { width: 50px !important; height: 1px !important; background-color: #333 !important; margin: 30px auto 15px auto !important; }
-.date-published { font-size: 13px !important; color: #666 !important; text-transform: uppercase !important; letter-spacing: 1px !important; font-weight: bold !important; }
+#ecdata-especial .header-divider { width: 50px !important; height: 1px !important; background-color: #333 !important; margin: 30px auto 15px auto !important; }
+#ecdata-especial .date-published { font-size: 13px !important; color: #666 !important; text-transform: uppercase !important; letter-spacing: 1px !important; font-weight: bold !important; }
 
-.story-text { max-width: 700px; margin: 0 auto 20px auto; padding: 0 20px; }
-.story-text p { font-size: 18px; line-height: 1.7; margin-bottom: 22px; color: #222; }
-.story-text h2 { font-family: 'Georgia', serif; font-size: 26px; font-weight: bold; color: #111; margin-top: 50px; margin-bottom: 20px; }
+#ecdata-especial .story-text { max-width: 700px; margin: 0 auto 20px auto; padding: 0 20px; }
+#ecdata-especial .story-text p { font-size: 18px; line-height: 1.7; margin-bottom: 22px; color: #222; }
+#ecdata-especial .story-text h2 { font-family: 'Georgia', serif; font-size: 26px; font-weight: bold; color: #111; margin-top: 50px; margin-bottom: 20px; }
 
 /* =========================================
    3. TARJETAS DE MÉTRICAS (KPIs)
    ========================================= */
-.metrics-container {
+#ecdata-especial .metrics-container {
     max-width: 900px; margin: 0 auto 40px auto; padding: 0 20px;
     display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;
 }
-.metric-card {
+#ecdata-especial .metric-card {
     background: #f9f9f9; border-top: 4px solid #d65442; padding: 25px 15px;
     text-align: center; border-radius: 0 0 6px 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-.metric-title { font-size: 14px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
-.metric-value { font-size: 48px; font-weight: 900; color: #111; line-height: 1; }
+#ecdata-especial .metric-title { font-size: 14px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+#ecdata-especial .metric-value { font-size: 48px; font-weight: 900; color: #111; line-height: 1; }
 
 /* =========================================
    4. DASHBOARD D3 Y VISUALIZACIÓN
    ========================================= */
-.viz-container { max-width: 1000px; margin: 0 auto 30px auto; padding: 0 20px; position: relative; }
-.dashboard-centered { display: flex; justify-content: center; align-items: center; width: 100%; }
+#ecdata-especial .viz-container { max-width: 1000px; margin: 0 auto 30px auto; padding: 0 20px; position: relative; }
+#ecdata-especial .dashboard-centered { display: flex; justify-content: center; align-items: center; width: 100%; }
 
-.error-message {
+#ecdata-especial .error-message {
     background-color: #FDEDEC; border: 1px solid #E6B0AA; color: #C0392B;
     padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; margin-bottom: 20px;
 }
 
-#chart-carreras svg {
+#ecdata-especial #chart-carreras svg {
     max-width: 650px;
     width: 100%;
     display: block;
@@ -77,28 +79,28 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     height: auto;
 }
 
-.polyline-guide { fill: none; stroke: #999; stroke-width: 1px; opacity: 0.6; }
-.label-category { font-size: 14px; fill: #333; font-weight: 400; font-family: 'Arial', sans-serif; }
-.label-percentage { font-size: 16px; font-weight: 900; font-family: 'Arial', sans-serif; }
-.label-absolute { font-size: 12px; fill: #666; font-family: 'Arial', sans-serif; }
+#ecdata-especial .polyline-guide { fill: none; stroke: #999; stroke-width: 1px; opacity: 0.6; }
+#ecdata-especial .label-category { font-size: 14px; fill: #333; font-weight: 400; font-family: 'Arial', sans-serif; }
+#ecdata-especial .label-percentage { font-size: 16px; font-weight: 900; font-family: 'Arial', sans-serif; }
+#ecdata-especial .label-absolute { font-size: 12px; fill: #666; font-family: 'Arial', sans-serif; }
 
 /* =========================================
    5. NOTAS Y FOOTER
    ========================================= */
-.data-clarification { font-family: 'Georgia', serif; font-size: 14px; color: #555; font-style: italic; text-align: center; max-width: 800px; margin: 20px auto 10px auto; padding: 0 20px; line-height: 1.4;}
-.source-note { font-size: 13px; color: #888; max-width: 800px; margin: 0 auto 50px auto; padding: 0 20px; text-align: center; font-family: Arial, sans-serif; }
+#ecdata-especial .data-clarification { font-family: 'Georgia', serif; font-size: 14px; color: #555; font-style: italic; text-align: center; max-width: 800px; margin: 20px auto 10px auto; padding: 0 20px; line-height: 1.4;}
+#ecdata-especial .source-note { font-size: 13px; color: #888; max-width: 800px; margin: 0 auto 50px auto; padding: 0 20px; text-align: center; font-family: Arial, sans-serif; }
 
-.special-credits-black { background-color: #111; color: #fff; padding: 60px 20px; text-align: center; margin-top: 60px; }
-.credits-main-title { font-family: 'Georgia', serif; font-size: 20px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-top: 0; margin-bottom: 30px; }
-.credit-block { margin-bottom: 20px; display: flex; flex-direction: column; align-items: center; }
-.credit-role { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #aaa; margin-bottom: 5px; letter-spacing: 1px; }
-.credit-name { font-family: 'Georgia', serif; font-size: 16px; }
-.copyright-text { font-size: 11px; color: #777; margin-top: 30px; }
+#ecdata-especial .special-credits-black { background-color: #111; color: #fff; padding: 60px 20px; text-align: center; margin-top: 60px; }
+#ecdata-especial .credits-main-title { font-family: 'Georgia', serif; font-size: 20px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin-top: 0; margin-bottom: 30px; }
+#ecdata-especial .credit-block { margin-bottom: 20px; display: flex; flex-direction: column; align-items: center; }
+#ecdata-especial .credit-role { font-size: 11px; font-weight: bold; text-transform: uppercase; color: #aaa; margin-bottom: 5px; letter-spacing: 1px; }
+#ecdata-especial .credit-name { font-family: 'Georgia', serif; font-size: 16px; }
+#ecdata-especial .copyright-text { font-size: 11px; color: #777; margin-top: 30px; }
 
 /* =========================================
    6. TABLA DESPLAZABLE (NUEVO)
    ========================================= */
-.table-responsive {
+#ecdata-especial .table-responsive {
     width: 100%;
     overflow-x: auto;
     margin-bottom: 30px;
@@ -106,7 +108,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     border-radius: 6px;
 }
 
-.custom-table {
+#ecdata-especial .custom-table {
     width: 100%;
     border-collapse: collapse;
     font-family: 'Arial', sans-serif;
@@ -115,7 +117,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     min-width: 600px;
 }
 
-.custom-table th {
+#ecdata-especial .custom-table th {
     background-color: #d65442;
     color: #fff;
     font-weight: bold;
@@ -126,24 +128,24 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     letter-spacing: 0.5px;
 }
 
-.custom-table td {
+#ecdata-especial .custom-table td {
     padding: 12px 15px;
     border-bottom: 1px solid #eaeaea;
     color: #333;
 }
 
-.custom-table tbody tr:nth-of-type(even) {
+#ecdata-especial .custom-table tbody tr:nth-of-type(even) {
     background-color: #fcfcfc;
 }
 
-.custom-table tbody tr:hover {
+#ecdata-especial .custom-table tbody tr:hover {
     background-color: #f4f4f4;
 }
 
 /* =========================================
    7. NUEVAS GRILLAS (EDADES Y SMALL MULTIPLES)
    ========================================= */
-.age-charts-grid {
+#ecdata-especial .age-charts-grid {
     max-width: 1000px !important;
     height:auto !important;
     display: grid;
@@ -152,52 +154,52 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     margin-bottom: 40px;
 }
 
-.small-multiples-grid {
+#ecdata-especial .small-multiples-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
 }
 
-.panel { 
+#ecdata-especial .panel { 
     background: #ffffff; 
     border: none; 
     padding: 10px 0; 
     display: flex; flex-direction: column; align-items: center; 
 }
-.panel-title { 
+#ecdata-especial .panel-title { 
     text-align: center; font-family: 'Georgia', serif; font-weight: bold; 
     text-transform: uppercase; font-size: 14px; letter-spacing: 1px; 
     margin-bottom: 15px; color: #111; width: 100%;
 }
 
-.dumbbell-line { stroke: #ccc; stroke-width: 2px; }
-.dumbbell-text { font-family: 'Arial', sans-serif; font-size: 11px; font-weight: bold; fill: #333; }
+#ecdata-especial .dumbbell-line { stroke: #ccc; stroke-width: 2px; }
+#ecdata-especial .dumbbell-text { font-family: 'Arial', sans-serif; font-size: 11px; font-weight: bold; fill: #333; }
 
-.large-viz-container {
+#ecdata-especial .large-viz-container {
     max-width: 1200px; 
     margin: 0 auto 40px auto;
     padding: 0 20px;
 }
 
-.axis-x-text {
+#ecdata-especial .axis-x-text {
     font-family: 'Arial', sans-serif;
     font-size: 13px;
     font-weight: bold;
     fill: #333;
 }
 
-.age-charts-grid .panel svg {
+#ecdata-especial .age-charts-grid .panel svg {
     max-width: 1000px !important; 
     height: 300px !important;
 }
 
-.large-viz-container .panel svg {
+#ecdata-especial .large-viz-container .panel svg {
     width: 100%;
     max-width: 1000px !important;
     height: 500px !important;
 }
 
-.legend-pill-container {
+#ecdata-especial .legend-pill-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -205,7 +207,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     margin-bottom: 30px;
 }
 
-.legend-pill {
+#ecdata-especial .legend-pill {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -216,13 +218,13 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
-.legend-color-box {
+#ecdata-especial .legend-color-box {
     width: 14px;
     height: 14px;
     border-radius: 3px;
 }
 
-.legend-label {
+#ecdata-especial .legend-label {
     font-family: 'Arial', sans-serif;
     font-size: 12px;
     font-weight: bold;
@@ -250,7 +252,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
 /* =========================================
    9. HERRAMIENTA INTERACTIVA (NUEVO)
    ========================================= */
-.interactive-dashboard-container {
+#ecdata-especial .interactive-dashboard-container {
     max-width: 1200px;
     margin: 0 auto 50px auto;
     padding: 30px;
@@ -261,7 +263,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
 }
 
-.dashboard-controls {
+#ecdata-especial .dashboard-controls {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -270,13 +272,13 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     align-items: flex-end;
 }
 
-.control-group {
+#ecdata-especial .control-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.control-label {
+#ecdata-especial .control-label {
     font-family: 'Arial', sans-serif;
     font-size: 12px;
     font-weight: bold;
@@ -285,7 +287,7 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     letter-spacing: 0.5px;
 }
 
-.custom-input-select {
+#ecdata-especial .custom-input-select {
     padding: 10px 15px;
     font-size: 15px;
     font-family: 'Arial', sans-serif;
@@ -297,18 +299,18 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     background-color: #fff;
 }
 
-.custom-input-select:focus {
+#ecdata-especial .custom-input-select:focus {
     border-color: #d65442;
 }
 
-.toggle-group {
+#ecdata-especial .toggle-group {
     display: flex;
     border: 2px solid #d65442;
     border-radius: 4px;
     overflow: hidden;
 }
 
-.toggle-btn {
+#ecdata-especial .toggle-btn {
     background: #fff;
     color: #d65442;
     border: none;
@@ -320,64 +322,64 @@ body, html { margin: 0; padding: 0; background-color: #ffffff; font-family: 'Ari
     border-right: 1px solid #d65442;
 }
 
-.toggle-btn:last-child {
+#ecdata-especial .toggle-btn:last-child {
     border-right: none;
 }
 
-.toggle-btn:hover {
+#ecdata-especial .toggle-btn:hover {
     background: #fdf2f0;
 }
 
-.toggle-btn.active {
+#ecdata-especial .toggle-btn.active {
     background: #d65442;
     color: #fff;
 }
 
-.interactive-kpis {
+#ecdata-especial .interactive-kpis {
     margin-bottom: 40px;
 }
 
-.interactive-charts-grid {
+#ecdata-especial .interactive-charts-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
-/* Ejemplo: Control de anchos independientes */
-#chart-edad-partidos svg { max-width: 700px; }
-#chart-jovenes-partidos svg { max-width: 650px; }
-#chart-mayores-partidos svg { max-width: 800px; } /* Más grande */
-#interactive-bar-chart svg { max-width: 100%; } /* Ocupa todo el panel */
+/* Control de anchos independientes */
+#ecdata-especial #chart-edad-partidos svg { max-width: 700px; }
+#ecdata-especial #chart-jovenes-partidos svg { max-width: 650px; }
+#ecdata-especial #chart-mayores-partidos svg { max-width: 800px; } 
+#ecdata-especial #interactive-bar-chart svg { max-width: 100%; } 
 
 /* =========================================
    10. RESPONSIVE (MOBILE FIRST REAL)
    ========================================= */
 @media (max-width: 768px) {
-    .headline { font-size: 38px; }
-    .subheadline { font-size: 18px; }
-    .metric-value { font-size: 36px; }
-    .metrics-container { grid-template-columns: 1fr; gap: 15px; }
-    .label-category { font-size: 12px; }
-    .label-percentage { font-size: 14px; }
-    .age-charts-grid, .interactive-charts-grid { grid-template-columns: 1fr; }
+    #ecdata-especial .headline { font-size: 38px; }
+    #ecdata-especial .subheadline { font-size: 18px; }
+    #ecdata-especial .metric-value { font-size: 36px; }
+    #ecdata-especial .metrics-container { grid-template-columns: 1fr; gap: 15px; }
+    #ecdata-especial .label-category { font-size: 12px; }
+    #ecdata-especial .label-percentage { font-size: 14px; }
+    #ecdata-especial .age-charts-grid, #ecdata-especial .interactive-charts-grid { grid-template-columns: 1fr; }
     
-    .dashboard-controls {
+    #ecdata-especial .dashboard-controls {
         flex-direction: column;
         align-items: center;
     }
-    .custom-input-select {
+    #ecdata-especial .custom-input-select {
         width: 100%;
         min-width: 280px;
     }
-    .toggle-group {
+    #ecdata-especial .toggle-group {
         flex-direction: column;
         width: 100%;
     }
-    .toggle-btn {
+    #ecdata-especial .toggle-btn {
         border-right: none;
         border-bottom: 1px solid #d65442;
     }
-    .toggle-btn:last-child {
+    #ecdata-especial .toggle-btn:last-child {
         border-bottom: none;
     }
 }
