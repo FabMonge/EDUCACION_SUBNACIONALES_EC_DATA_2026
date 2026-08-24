@@ -655,7 +655,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderStackedColumns();
     
     // Top 5 con la nueva paleta de colores
-    renderTop5BarChart("#chart-edad-partidos", partidosEdadData, "promedio", (val) => val.toFixed(1), (d) => `<b>Edad Máxima:</b> ${d.max} años`, "#d65442");
+    renderTop5BarChart("#chart-edad-partidos", partidosEdadData, "promedio", (val) => val.toFixed(1), (d) => `<b>Edad mayor:</b> ${d.max} años`, "#d65442");
     renderTop5BarChart("#chart-jovenes-partidos", partidosJovenesData, "pct", (val) => val + "%", (d) => `<b>Jóvenes (18-29):</b> ${d.jovenes}`, "#d86a4a");
     renderTop5BarChart("#chart-mayores-partidos", partidosMayoresData, "pct", (val) => val + "%", (d) => `<b>Adultos Mayores (61+):</b> ${d.mayores}`, "#d56d73");
     renderTop5BarChart("#chart-mujeres-partidos", partidosMujeresData, "pct", (val) => val + "%", (d) => `<b>Mujeres jóvenes:</b> ${d.mujeres}<br><b>Total jóvenes en el partido:</b> ${d.totalJovenes}`, "#df817c");
