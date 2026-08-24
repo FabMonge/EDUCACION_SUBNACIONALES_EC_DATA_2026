@@ -49,7 +49,7 @@ const edadesData = [
     { cargo: "Alcalde provincial", promedio: 49, min: 19, max: 86 },
     { cargo: "Alcalde distrital", promedio: 48, min: 20, max: 92 },
     { cargo: "Vicegobernador regional", promedio: 47, min: 20, max: 79 },
-    { cargo: "Consejero nacional", promedio: 41, min: 18, max: 87 },
+    { cargo: "Consejero regional", promedio: 41, min: 18, max: 87 },
     { cargo: "Regidor provincial", promedio: 40, min: 18, max: 93 },
     { cargo: "Regidor distrital", promedio: 38, min: 18, max: 96 }
 ];
@@ -59,7 +59,7 @@ const educacionColumnasData = [
     { cargo: "Alc. Provincial", "Primaria": 0.6, "Secundaria": 19.2, "Superior técnica": 3.4, "Superior universitaria": 33.1, "Posgrado": 30.5, "Sin datos": 13.2 },
     { cargo: "Alc. Distrital", "Primaria": 1.4, "Secundaria": 37.2, "Superior técnica": 3.9, "Superior universitaria": 35.0, "Posgrado": 17.1, "Sin datos": 5.4 },
     { cargo: "Vicegob. Reg.", "Primaria": 0.3, "Secundaria": 14.1, "Superior técnica": 2.5, "Superior universitaria": 27.0, "Posgrado": 32.8, "Sin datos": 23.3 },
-    { cargo: "Cons. Nacional", "Primaria": 1.6, "Secundaria": 28.0, "Superior técnica": 2.2, "Superior universitaria": 25.4, "Posgrado": 11.1, "Sin datos": 31.8 },
+    { cargo: "Cons. Regional", "Primaria": 1.6, "Secundaria": 28.0, "Superior técnica": 2.2, "Superior universitaria": 25.4, "Posgrado": 11.1, "Sin datos": 31.8 },
     { cargo: "Reg. Provincial", "Primaria": 2.9, "Secundaria": 42.2, "Superior técnica": 3.3, "Superior universitaria": 27.2, "Posgrado": 8.8, "Sin datos": 15.6 },
     { cargo: "Reg. Distrital", "Primaria": 5.9, "Secundaria": 60.7, "Superior técnica": 2.7, "Superior universitaria": 19.1, "Posgrado": 3.2, "Sin datos": 8.4 }
 ];
@@ -184,7 +184,7 @@ function renderAgeCharts() {
         .attr("r", 6)
         .style("fill", "#df817c")
         .on("mouseover", function(event, d) {
-            showTooltip(event, `<b>Edad mínima:</b> ${d.min}`);
+            showTooltip(event, `<b>Edad menor:</b> ${d.min}`);
         })
         .on("mouseout", hideTooltip);
 
@@ -195,7 +195,7 @@ function renderAgeCharts() {
         .attr("r", 6)
         .style("fill", "#d65442")
         .on("mouseover", function(event, d) {
-            showTooltip(event, `<b>Edad máxima:</b> ${d.max}`);
+            showTooltip(event, `<b>Edad mayor:</b> ${d.max}`);
         })
         .on("mouseout", hideTooltip);
 
