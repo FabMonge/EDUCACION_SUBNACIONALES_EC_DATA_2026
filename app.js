@@ -2,8 +2,7 @@
 // 1. PANEL DE CONFIGURACIÓN MODULAR (CONFIG)
 // ==========================================
 const CONFIG = {
-    colores: {
-        "Posgrado **": "#d65442",            
+    colores: {            
         "Posgrado": "#d65442",
         "Superior universitaria": "#d86a4a", 
         "Universitaria": "#d86a4a",
@@ -56,13 +55,13 @@ const edadesData = [
 ];
 
 const educacionColumnasData = [
-    { cargo: "Gob. Regional", "Primaria": 0.4, "Secundaria": 10.9, "Superior técnica": 2.7, "Superior universitaria": 41.4, "Posgrado **": 44.5, "Sin datos": 0.1 },
-    { cargo: "Alc. Provincial", "Primaria": 0.6, "Secundaria": 19.2, "Superior técnica": 3.4, "Superior universitaria": 33.1, "Posgrado **": 30.5, "Sin datos": 13.2 },
-    { cargo: "Alc. Distrital", "Primaria": 1.4, "Secundaria": 37.2, "Superior técnica": 3.9, "Superior universitaria": 35.0, "Posgrado **": 17.1, "Sin datos": 5.4 },
-    { cargo: "Vicegob. Reg.", "Primaria": 0.3, "Secundaria": 14.1, "Superior técnica": 2.5, "Superior universitaria": 27.0, "Posgrado **": 32.8, "Sin datos": 23.3 },
-    { cargo: "Cons. Nacional", "Primaria": 1.6, "Secundaria": 28.0, "Superior técnica": 2.2, "Superior universitaria": 25.4, "Posgrado **": 11.1, "Sin datos": 31.8 },
-    { cargo: "Reg. Provincial", "Primaria": 2.9, "Secundaria": 42.2, "Superior técnica": 3.3, "Superior universitaria": 27.2, "Posgrado **": 8.8, "Sin datos": 15.6 },
-    { cargo: "Reg. Distrital", "Primaria": 5.9, "Secundaria": 60.7, "Superior técnica": 2.7, "Superior universitaria": 19.1, "Posgrado **": 3.2, "Sin datos": 8.4 }
+    { cargo: "Gob. Regional", "Primaria": 0.4, "Secundaria": 10.9, "Superior técnica": 2.7, "Superior universitaria": 41.4, "Posgrado": 44.5, "Sin datos": 0.1 },
+    { cargo: "Alc. Provincial", "Primaria": 0.6, "Secundaria": 19.2, "Superior técnica": 3.4, "Superior universitaria": 33.1, "Posgrado": 30.5, "Sin datos": 13.2 },
+    { cargo: "Alc. Distrital", "Primaria": 1.4, "Secundaria": 37.2, "Superior técnica": 3.9, "Superior universitaria": 35.0, "Posgrado": 17.1, "Sin datos": 5.4 },
+    { cargo: "Vicegob. Reg.", "Primaria": 0.3, "Secundaria": 14.1, "Superior técnica": 2.5, "Superior universitaria": 27.0, "Posgrado": 32.8, "Sin datos": 23.3 },
+    { cargo: "Cons. Nacional", "Primaria": 1.6, "Secundaria": 28.0, "Superior técnica": 2.2, "Superior universitaria": 25.4, "Posgrado": 11.1, "Sin datos": 31.8 },
+    { cargo: "Reg. Provincial", "Primaria": 2.9, "Secundaria": 42.2, "Superior técnica": 3.3, "Superior universitaria": 27.2, "Posgrado": 8.8, "Sin datos": 15.6 },
+    { cargo: "Reg. Distrital", "Primaria": 5.9, "Secundaria": 60.7, "Superior técnica": 2.7, "Superior universitaria": 19.1, "Posgrado": 3.2, "Sin datos": 8.4 }
 ];
 
 const partidosEdadData = [
