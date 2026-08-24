@@ -236,7 +236,7 @@ function renderStackedColumns() {
 
     const legendContainer = document.getElementById("unified-legend");
     const legendKeys = Object.keys(CONFIG.colores).filter(key => 
-        !["Universitaria", "Posgrado", "Técnica"].includes(key)
+        !["Universitaria", "Técnica"].includes(key)
     ); 
     
     legendContainer.innerHTML = legendKeys.map(key => 
